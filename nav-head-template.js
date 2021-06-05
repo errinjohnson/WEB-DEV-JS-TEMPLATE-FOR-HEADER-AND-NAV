@@ -143,6 +143,13 @@ function addNavElements2(){
 
    newNav4.appendChild(newNav5);
 
+   let newNavli = document.createElement("li");
+   let attClass8 = document.createAttribute("class");
+   attClass8.value = "nav-item";
+   newNavli.setAttributeNode(attClass8);
+
+   newNav5.appendChild(newNavli);
+
 
 
 
