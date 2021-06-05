@@ -150,6 +150,24 @@ function addNavElements2(){
 
    newUL.appendChild(newNavli);
 
+   let newLi_a = document.createElement("a");
+   let attClass9 = document.createAttribute("class");
+   attClass9.value = "nav-link active";
+   newLi_a.setAttributeNode(attClass9);
+
+   let attAria3 = document.createAttribute("aria-current");
+   attAria3.value = "page";
+   newLi_a.setAttributeNode(attAria3);
+
+   let href4 = document.createAttribute("href");
+   href4.value = "#";
+   newLi_a.setAttributeNode(href4);
+
+   let t3 = document.createTextNode("HOME");
+   newLi_a.appendChild(t3);
+
+   newNavli.appendChild(newLi_a);
+
 
 
 
