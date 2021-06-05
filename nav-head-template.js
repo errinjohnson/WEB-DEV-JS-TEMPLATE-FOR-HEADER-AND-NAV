@@ -190,9 +190,42 @@ function addNavElements2(){
    newNavli2.appendChild(newLi_b);
 //////////////////////////////////////////////////////////////////
 
+let newNavli3 = document.createElement("li");
+let attClass12 = document.createAttribute("class");
+attClass12.value = "nav-item";
+newNavli3.setAttributeNode(attClass12);
 
+newUL.appendChild(newNavli3);
 
+let newLi_c = document.createElement("a");
+let attClass13 = document.createAttribute("class");
+attClass13.value = "nav-link";
+newLi_c.setAttributeNode(attClass13);
 
+let href6 = document.createAttribute("href");
+href6.value = "#";
+newLi_c.setAttributeNode(href6);
+
+let t6 = document.createTextNode("Title 2");//3
+newLi_c.appendChild(t6);
+
+newNavli3.appendChild(newLi_c);
+///////////////////////////////////////////// dropdown started
+
+let newLi4 = document.createElement("li");
+let attClass14 = document.createAttribute("class");
+attClass14.value = "nav-item dropdown";
+
+newLi4.setAttributeNode(attClass14);
+newUL.appendChild(newLi4);
+
+let newLi_d = document.createElement("a");
+let attClass15 = document.createAttribute("class");
+attClass15.value = "nav-link dropdown-toggle";
+newLi_d.setAttributeNode(attClass15);
+
+newLi4.appendChild(newLi_d);
+////////////////////////////////////////////////////////////
 
 
 
