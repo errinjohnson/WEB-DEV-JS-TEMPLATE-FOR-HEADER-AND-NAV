@@ -2,8 +2,10 @@ function addHeadElements() {
     //START get element by id, create element, create text node
     let include1 = document.getElementById("include");
     let newDiv = document.createElement("title");
+
     let t = document.createTextNode("Errin Johnson | Software Developer");
     newDiv.appendChild(t);
+
     include1.appendChild(newDiv);
 
     //add link with attributes
@@ -40,22 +42,29 @@ function addHeadElements() {
     newLink2.setAttributeNode(attRel2);
 
     include1.appendChild(newLink2);
-    //end of link2
+  }  //end of link2
+  addHeadElements();
+// // END of addHeadElements
+// //
+function addNavElements2(){
 
-}
-addHeadElements();
-// END of addHeadElements
-//
-// function addNavElements2(){
-//
-//   let include2 = document.getElementById('navBar1');
-//
-//   let newNav = document.createElement("nav");
-//   let attClass = document.createAttribute("class");
-//   attClass.value = "navbar navbar-expand-lg navbar-light bg-light";
-//   newNav.setAttributeNode(attClass);
-//
-//   include2.appendChild(newNav);
-// }
-// addNavElements2();
-// // END of addNavElements2
+   let include2 = document.getElementById("navBar1");
+
+   let newNav1 = document.createElement("nav");
+   let attClass = document.createAttribute("class");
+   attClass.value = "navbar navbar-expand-lg navbar-light bg-light";
+   newNav1.setAttributeNode(attClass);
+
+   include2.appendChild(newNav1);
+
+   let newNav2 = document.createElement("div");
+   let attClass2 = document.createAttribute("class");
+   attClass2.value = "container-fluid";
+   newNav2.setAttributeNode(attClass2);
+
+   newNav1.appendChild(newNav2);
+   include2.appendChild(newNav1);
+
+ }
+addNavElements2();
+// // // END of addNavElements2
