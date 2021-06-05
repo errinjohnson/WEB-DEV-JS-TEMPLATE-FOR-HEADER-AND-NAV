@@ -135,21 +135,21 @@ function addNavElements2(){
 
    newNav2.appendChild(newNav4);
    //end of 3 level of nesting
-
+////////////////////////////////////////////////////////
    let newUL = document.createElement("ul");
    let attClass7 = document.createAttribute("class");
    attClass7.value = "navbar-nav";
    newUL.setAttributeNode(attClass7);
 
    newNav4.appendChild(newUL);
-
+/////////////////////////////////////////////////////////
    let newNavli = document.createElement("li");
    let attClass8 = document.createAttribute("class");
    attClass8.value = "nav-item";
    newNavli.setAttributeNode(attClass8);
 
    newUL.appendChild(newNavli);
-
+//////////////////////////////////////////////////////
    let newLi_a = document.createElement("a");
    let attClass9 = document.createAttribute("class");
    attClass9.value = "nav-link active";
@@ -163,11 +163,32 @@ function addNavElements2(){
    href4.value = "#";
    newLi_a.setAttributeNode(href4);
 
-   let t3 = document.createTextNode("HOME");
+   let t3 = document.createTextNode("HOME"); //1
    newLi_a.appendChild(t3);
 
    newNavli.appendChild(newLi_a);
+////////////////////////////////////////////////////////
+   let newNavli2 = document.createElement("li");
+   let attClass10 = document.createAttribute("class");
+   attClass10.value = "nav-item";
+   newNavli2.setAttributeNode(attClass10);
 
+   newUL.appendChild(newNavli2);
+
+   let newLi_b = document.createElement("a");
+   let attClass11 = document.createAttribute("class");
+   attClass11.value = "nav-link";
+   newLi_b.setAttributeNode(attClass11);
+
+   let href5 = document.createAttribute("href");
+   href5.value = "#";
+   newLi_b.setAttributeNode(href5);
+
+   let t5 = document.createTextNode("Title");//2
+   newLi_b.appendChild(t5);
+
+   newNavli2.appendChild(newLi_b);
+//////////////////////////////////////////////////////////////////
 
 
 
