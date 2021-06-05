@@ -136,19 +136,41 @@ function addNavElements2(){
    newNav2.appendChild(newNav4);
    //end of 3 level of nesting
 
-   let newNav5 = document.createElement("ul");
+   let newUL = document.createElement("ul");
    let attClass7 = document.createAttribute("class");
    attClass7.value = "navbar-nav";
-   newNav5.setAttributeNode(attClass7);
+   newUL.setAttributeNode(attClass7);
 
-   newNav4.appendChild(newNav5);
+   newNav4.appendChild(newUL);
 
    let newNavli = document.createElement("li");
    let attClass8 = document.createAttribute("class");
    attClass8.value = "nav-item";
    newNavli.setAttributeNode(attClass8);
 
-   newNav5.appendChild(newNavli);
+   newUL.appendChild(newNavli);
+
+   let newLi_a = document.createElement("a");
+   let attClass9 = document.createAttribute("class");
+   attClass9.value = "nav-link active";
+   newLi_a.setAttributeNode(attClass9);
+
+   let attAria3 = document.createAttribute("aria-current");
+   attAria3.value = "page";
+   newLi_a.setAttributeNode(attAria3);
+
+   let href4 = document.createAttribute("href");
+   href4.value = "#";
+   newLi_a.setAttributeNode(href4);
+
+   let t3 = document.createTextNode("HOME");
+   newLi_a.appendChild(t3);
+
+   newNavli.appendChild(newLi_a);
+
+
+
+
 
 
 
