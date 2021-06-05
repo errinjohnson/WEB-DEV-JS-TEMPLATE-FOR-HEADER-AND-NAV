@@ -1,11 +1,11 @@
-function addElements() {
-    //get element by id, create element, create text node
+function addHeadElements() {
+    //START get element by id, create element, create text node
     let include1 = document.getElementById("include");
     let newDiv = document.createElement("title");
     let t = document.createTextNode("Errin Johnson | Software Developer");
     newDiv.appendChild(t);
     include1.appendChild(newDiv);
-    
+
     //add link with attributes
     let newLink = document.createElement("link");
       //
@@ -42,6 +42,20 @@ function addElements() {
     include1.appendChild(newLink2);
     //end of link2
 
-
 }
-addElements();
+addHeadElements();
+// END of addHeadElements
+//
+// function addNavElements2(){
+//
+//   let include2 = document.getElementById('navBar1');
+//
+//   let newNav = document.createElement("nav");
+//   let attClass = document.createAttribute("class");
+//   attClass.value = "navbar navbar-expand-lg navbar-light bg-light";
+//   newNav.setAttributeNode(attClass);
+//
+//   include2.appendChild(newNav);
+// }
+// addNavElements2();
+// // END of addNavElements2
