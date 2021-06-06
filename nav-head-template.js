@@ -1,6 +1,7 @@
 function addHeadElements() {
     //START get element by id, create element, create text node
       let include1 = document.getElementById("include");
+      //////////////////////////////////////////////////////////START OF HEAD ELEMENTS//////////////
 
       let meta1 = document.createElement("meta");
       let attMeta = document.createAttribute("name");
@@ -13,7 +14,7 @@ function addHeadElements() {
 
       include1.appendChild(meta1);
 
-      //////////////////////////////////////////
+      ////////////////META1 TAG//////////////////////
       let meta2 = document.createElement("meta");
       let att3Meta2 = document.createAttribute("name");
       att3Meta2.value = "twitter:site";
@@ -25,7 +26,7 @@ function addHeadElements() {
 
       include1.appendChild(meta2);
 
-      //////////////////////////////////////////
+      ////////////////////META2 TAG//////////////////
       let meta3 = document.createElement("meta");
       let att5Meta3 = document.createAttribute("name");
       att5Meta3.value = "viewport";
@@ -36,7 +37,7 @@ function addHeadElements() {
       meta3.setAttributeNode(att6Meta3);
 
       include1.appendChild(meta3);
-      ////////////////////////////////////////
+      /////////////////////META3 TAG///////////////////
 
       let meta4 = document.createElement("meta");
       let att7Meta4 = document.createAttribute("charset");
@@ -44,8 +45,10 @@ function addHeadElements() {
       meta4.setAttributeNode(att7Meta4);
 
       include1.appendChild(meta4);
+      /////////////////////META4 TAG///////////////////
 
-      ////////////////////////////////////////////
+
+      //////////////////////////////////////////////////////////END OF META ELEMENTS//////////////
 
       let newDiv = document.createElement("title");
 
@@ -90,7 +93,9 @@ function addHeadElements() {
     include1.appendChild(newLink2);
   }  //end of link2
   addHeadElements();
-  // // END of addHeadElements
+//////////////////////////////////////////////////////////END OF HEAD ELEMENTS//////////////
+
+//////////////////////////////////////////////////////////START OF BOOTSTRAP NAVIGATION//////////////
 function addNavElements2(){
 
    let include2 = document.getElementById("navBar1");
@@ -180,7 +185,8 @@ function addNavElements2(){
 
    newNav2.appendChild(newNav4);
    //end of 3 level of nesting
-////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////END OF BOOSTRAP INITIAL SETUP//////////////
+//////////////////////////////////////////////////////////START OF BOOTSTRAP LINKS MENU BAR//////////////
    let newUL = document.createElement("ul");
    let attClass7 = document.createAttribute("class");
    attClass7.value = "navbar-nav";
@@ -208,7 +214,7 @@ function addNavElements2(){
    href4.value = "#";
    newLi_a.setAttributeNode(href4);
 
-   let t3 = document.createTextNode("HOME"); //1
+   let t3 = document.createTextNode("HOME"); //////////////HOME MENU LINK//////////////
    newLi_a.appendChild(t3);
 
    newNavli.appendChild(newLi_a);
@@ -229,7 +235,7 @@ function addNavElements2(){
    href5.value = "https://errinjohnson.github.io/";
    newLi_b.setAttributeNode(href5);
 
-   let t5 = document.createTextNode("IoT Workshop");//2
+   let t5 = document.createTextNode("IoT Workshop"); //////////////IoT MENU LINK/////////////////////
    newLi_b.appendChild(t5);
 
    let attTarget = document.createAttribute("target");
@@ -255,11 +261,15 @@ let href6 = document.createAttribute("href");
 href6.value = "#";
 newLi_c.setAttributeNode(href6);
 
-let t6 = document.createTextNode("Title 2");//3
+let t6 = document.createTextNode("Nursing Eval Tool | Database");//////////////N.E.T. MENU LINK///////////
 newLi_c.appendChild(t6);
 
+let attTarget2 = document.createAttribute("target");
+attTarget2.value = "__blank";
+newLi_c.setAttributeNode(attTarget2);
+
 newNavli3.appendChild(newLi_c);
-///////////////////////////////////////////// dropdown started
+//////////////////////////////////////////////////////////START BOOTSTRAP DROPDOWN MENU//////////////
 
 let newLi4 = document.createElement("li");
 let attClass14 = document.createAttribute("class");
@@ -294,11 +304,11 @@ let newAria = document.createAttribute("aria-expanded");
 newAria.value = "false";
 newLi_d.setAttributeNode(newAria);
 
-let t7 = document.createTextNode("Drop Down Link");
+let t7 = document.createTextNode("Other IT Projects");//////////////OTHER PROJECTS MENU LINK//////////////
 newLi_d.appendChild(t7);
 
 newLi4.appendChild(newLi_d);
-//////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
 
 let newUL2 = document.createElement("ul");
 let attClass16 = document.createAttribute("class");
@@ -322,11 +332,15 @@ attClass17.value = "dropdown-item";
 newAnch.setAttributeNode(attClass17);
 
 let href8 = document.createAttribute("href");
-href8.value = "#";
+href8.value = "https://www.eventcombo.com/o/rockit-women-36638";
 newAnch.setAttributeNode(href8);
 
-let t8 = document.createTextNode("link dropdown 1");
+let t8 = document.createTextNode("Event Combo Web Pages");////////////////////////////////////////////////////////Event Combo Link
 newAnch.appendChild(t8);
+
+let attTarget3 = document.createAttribute("target");
+attTarget3.value = "__blank";
+newAnch.setAttributeNode(attTarget3);
 
 newLi5.appendChild(newAnch);
 ////////////////////////////////////////////////////////////
@@ -343,7 +357,7 @@ let href9 = document.createAttribute("href");
 href9.value = "#";
 newAnch2.setAttributeNode(href9);
 
-let t9 = document.createTextNode("link dropdown 2");
+let t9 = document.createTextNode("link dropdown 2");//////////////////////////////////////////////////////////link dropdown2
 newAnch2.appendChild(t9);
 
 newLi6.appendChild(newAnch2);
@@ -361,15 +375,17 @@ let href10 = document.createAttribute("href");
 href10.value = "#";
 newAnch3.setAttributeNode(href10);
 
-let t10 = document.createTextNode("link dropdown 3");
+let t10 = document.createTextNode("link dropdown 3");/////////////////////////////////////////////////////link dropdown3
 newAnch3.appendChild(t10);
 
 newLi7.appendChild(newAnch3);
 /////////////////////////////////////////////
  }
 addNavElements2();
-// // // END of addNavElements2
+// // // END of addNavElements2/////////////////////////////////////////////////////////////End of Navigation//////////
 
+
+//////////////////////////////////////////////////////////////////////////////////////start of script elements//////////
 function addScriptElements3(){
 
   let divScript = document.getElementById("script-bootstrap");
@@ -409,4 +425,4 @@ function addScriptElements3(){
 
 }
 addScriptElements3();
-////end of addScriptElements3
+////end of addScriptElements3/////////////////////////////////////////////////////////end of script elements
