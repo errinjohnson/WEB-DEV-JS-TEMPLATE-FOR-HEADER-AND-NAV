@@ -1,0 +1,169 @@
+#readMore {
+    display: none;
+}
+
+/* js 'read more' script*/
+div#myID {
+    width: 100%;
+}
+
+div#myID img {
+    margin: auto;
+    padding: 2px 20px 40px 2px;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+@media screen and (max-width: 350px) {
+    div#myID img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    div#myID img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+header {
+    display: none;
+}
+
+section.eventBanner {
+    margin-top: -25px;
+}
+.eventFlyer { display: none;}
+div#viewEvent {
+    margin-top: -50px;
+}
+
+button#btn {
+    padding: 15px;
+    color: blue;
+    font-family: georgia;
+    text-transform: uppercase;
+    background-color: #FFEBCD;
+    border-radius: 10px;
+}
+
+footer,
+.text-links li,
+.text-links li a {
+    display: none;
+}
+
+.event-name,
+.vanue-name {
+    color: white;
+    font-weight: 900;
+    text-shadow: 2.5px 2.5px black;
+}
+
+.adiv {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 2.5px 2.5px grey;
+    font-weight: 600;
+}
+
+.buttons {
+    background: transparent !important;
+}
+
+#viewEvent,
+.eventVanue {
+    background: transparent;
+}
+
+html,
+body,
+#viewEvent,
+.enterPromoCode,
+.red-heading,
+.adiv,
+.tot,
+.text24,
+.eventVanue,
+.event-name,
+.buttons a,
+.organiserBox p,
+.organiserBox span a,
+.text-links li a,
+.eventFlyerDes {
+    font-family: georgia, Times !important;
+}
+
+.ticdes p,
+.ticdetail {
+    font-size: 16px;
+    text-align: left;
+    line-height: 16px;
+}
+
+c12.tides {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.refundPolicyInfo,
+.organiserBox,
+.ticket,
+.buttons a.makeLive,
+.eventBanner,
+.eventVanue {
+    border-radius: 10px;
+}
+
+a {
+    color: #E135A2;
+}
+
+a:visited {
+    color: #8A2BE2;
+}
+
+.red-heading,
+.tot,
+.multiDateVenueText,
+.organiserBox a,
+.enterPromoCode {
+    color: black;
+}
+
+.eventFlyerDes,
+.buttons,
+.buttons a.makeLive,
+.enterPromoCode {
+    background: rgb(227, 150, 108);
+    background: linear-gradient(90deg, rgba(227, 150, 108, 0.779131635564382) 16%, rgba(238, 215, 204, 0.6138655291218049) 89%);
+}
+
+section.eventBanner {
+    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/butterfly-ylanite-koppens-2820125.jpg");
+    background-color: transparent;
+    background-size: cover;
+    background-attachment: scroll;
+    /* needed for safari apple products */
+    min-height: 425px;
+}
+
+@media screen and (max-device-width: 768px) {
+    section.eventBanner {
+        background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/butterfly-ylanite-koppens593x247.jpg");
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+
+body {
+/*    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/background-1747786_1280.jpg");*/
+}
+
+/* for safari apple products*/
+body {
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
+}

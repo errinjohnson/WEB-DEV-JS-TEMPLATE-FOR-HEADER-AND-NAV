@@ -1,0 +1,182 @@
+#readMore {
+    display: none;
+}
+
+/* js 'read more' script*/
+div#myID {
+    width: 100%;
+}
+
+div#myID img {
+    margin: auto;
+    padding: 2px 20px 40px 2px;
+    max-width: 200px;
+    max-height: 200px;
+}
+/* #hPadding {
+	padding-left: 130px;
+    background-color: burlywood;
+} */
+
+@media screen and (max-width: 350px) {
+    div#myID img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    div#myID img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+#myFont {font-weight:600;}
+header {
+    display: none;
+}
+
+section.eventBanner {
+    margin-top: -25px;
+}
+.eventFlyer { display: none;}
+div#viewEvent {
+    margin-top: -50px;
+}
+
+button#btn {
+    padding: 15px;
+    color: blue;
+    font-family: georgia;
+    text-transform: uppercase;
+    background-color: #FFEBCD;
+    border-radius: 10px;
+}
+
+footer,
+.text-links li,
+.text-links li a {
+    display: none;
+}
+
+.event-name,
+.vanue-name {
+    color: black;
+    font-weight: 900;
+    text-shadow: 2.5px 2.5px white;
+}
+
+.adiv {
+    font-size: 1.5em;
+    color: black;
+    text-shadow: 2.5px 2.5px white;
+    font-weight: 600;
+}
+
+.buttons {
+    background: transparent !important;
+}
+
+#viewEvent,
+.eventVanue {
+    background: transparent;
+}
+
+html,
+body,
+#viewEvent,
+.enterPromoCode,
+.red-heading,
+.adiv,
+.tot,
+.text24,
+.eventVanue,
+.event-name,
+.buttons a,
+.organiserBox p,
+.organiserBox span a,
+.text-links li a,
+.eventFlyerDes {
+    font-family: georgia, Times !important;
+}
+
+.ticdes p,
+.ticdetail {
+    font-size: 16px;
+    text-align: left;
+    line-height: 16px;
+}
+
+c12.tides {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.refundPolicyInfo,
+.organiserBox,
+.ticket,
+.buttons a.makeLive,
+.eventBanner,
+.eventVanue {
+    border-radius: 10px;
+}
+
+a {
+    color: #E135A2;
+}
+
+a:visited {
+    color: #8A2BE2;
+}
+
+.red-heading,
+.tot,
+.multiDateVenueText,
+.organiserBox a {
+    color: mediumpurple;
+}
+
+.enterPromoCode {
+    background-color: #b380ff;
+}
+
+.eventFlyerDes,
+.buttons,
+.buttons a.makeLive,
+.enterPromoCode {
+    color: black;
+    font-weight: 400;
+    background: rgb(244, 236, 114);
+    background: linear-gradient(245deg, rgba(244, 236, 114, 0.5074229520909926) 36%, rgba(246, 237, 93, 0.49341734985009633) 63%);
+}
+
+
+section.eventBanner {
+    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/networking_img.gif");
+    background-color: transparent;
+    background-size: cover;
+    background-attachment: scroll;
+    /* needed for safari apple products */
+    min-height: 425px;
+}
+
+@media screen and (max-device-width: 768px) {
+    section.eventBanner {
+        background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/networking_img.gif");
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+
+body {
+/*
+    background: rgb(237, 170, 94);
+    background: linear-gradient(245deg, rgba(237, 170, 94, 1) 15%, rgba(238, 123, 94, 1) 28%, rgba(239, 211, 94, 0.7465564738292011) 36%, rgba(238, 123, 94, 0.8705234159779615) 45%, rgba(246, 234, 93, 0.49341734985009633) 63%);
+*/
+}
+
+/* for safari apple products*/
+body {
+    padding-left: constant(safe-area-inset-left);
+    padding-right: constant(safe-area-inset-right);
+}
