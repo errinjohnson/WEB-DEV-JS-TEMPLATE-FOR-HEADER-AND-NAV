@@ -354,11 +354,15 @@ attClass18.value = "dropdown-item";
 newAnch2.setAttributeNode(attClass18);
 
 let href9 = document.createAttribute("href");
-href9.value = "#";
+href9.value = "https://jsfiddle.net/errinjohnson/rtv1xLzc/13/";
 newAnch2.setAttributeNode(href9);
 
-let t9 = document.createTextNode("link dropdown 2");//////////////////////////////////////////////////////////link dropdown2
+let t9 = document.createTextNode("Dyamic Navbar Template with JS");//////////////////////////////////////////////////////////link dropdown2
 newAnch2.appendChild(t9);
+
+let attTarget4 = document.createAttribute("target");
+attTarget4.value = "__blank";
+newAnch2.setAttributeNode(attTarget4);
 
 newLi6.appendChild(newAnch2);
 //////////////////////////////////////////////////////////////////////////
