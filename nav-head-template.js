@@ -1,14 +1,60 @@
 function addHeadElements() {
     //START get element by id, create element, create text node
-    let include1 = document.getElementById("include");
-    let newDiv = document.createElement("title");
+      let include1 = document.getElementById("include");
 
-    let t = document.createTextNode("Errin Johnson | Software Developer");
-    newDiv.appendChild(t);
+      let meta1 = document.createElement("meta");
+      let attMeta = document.createAttribute("name");
+      attMeta.value = "twitter:card"
+      meta1.setAttributeNode(attMeta);
 
-    include1.appendChild(newDiv);
+      let att2Meta1 = document.createAttribute("content");
+      att2Meta1.value = "summary";
+      meta1.setAttributeNode(att2Meta1);
 
-    //add link with attributes
+      include1.appendChild(meta1);
+
+      //////////////////////////////////////////
+      let meta2 = document.createElement("meta");
+      let att3Meta2 = document.createAttribute("name");
+      att3Meta2.value = "twitter:site";
+      meta2.setAttributeNode(att3Meta2);
+
+      let att4Meta2 = document.createAttribute("content");
+      att4Meta2.value = "@errinjohnson64";
+      meta2.setAttributeNode(att4Meta2);
+
+      include1.appendChild(meta2);
+
+      //////////////////////////////////////////
+      let meta3 = document.createElement("meta");
+      let att5Meta3 = document.createAttribute("name");
+      att5Meta3.value = "viewport";
+      meta3.setAttributeNode(att5Meta3);
+
+      let att6Meta3 = document.createAttribute("content");
+      att6Meta3.value = "width=device-width, initial-scale=1";
+      meta3.setAttributeNode(att6Meta3);
+
+      include1.appendChild(meta3);
+      ////////////////////////////////////////
+
+      let meta4 = document.createElement("meta");
+      let att7Meta4 = document.createAttribute("charset");
+      att7Meta4.value = "utf-8";
+      meta4.setAttributeNode(att7Meta4);
+
+      include1.appendChild(meta4);
+
+      ////////////////////////////////////////////
+
+      let newDiv = document.createElement("title");
+
+      let t = document.createTextNode("Errin Johnson | Software Developer");
+      newDiv.appendChild(t);
+
+      include1.appendChild(newDiv);
+      ////////////////////////////////////////////////////////
+          //add link with attributes
     let newLink = document.createElement("link");
       //
     let href1 = document.createAttribute("href");
@@ -44,8 +90,7 @@ function addHeadElements() {
     include1.appendChild(newLink2);
   }  //end of link2
   addHeadElements();
-// // END of addHeadElements
-// //
+  // // END of addHeadElements
 function addNavElements2(){
 
    let include2 = document.getElementById("navBar1");
@@ -316,8 +361,48 @@ let t10 = document.createTextNode("link dropdown 3");
 newAnch3.appendChild(t10);
 
 newLi7.appendChild(newAnch3);
-
-
+/////////////////////////////////////////////
  }
 addNavElements2();
 // // // END of addNavElements2
+
+function addScriptElements3(){
+
+  let divScript = document.getElementById("script-bootstrap");
+
+  let scriptBS = document.createElement("script");
+
+  let attScriptBS = document.createAttribute("src");
+  attScriptBS.value = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js";
+  scriptBS.setAttributeNode(attScriptBS);
+
+  let attInteg2 = document.createAttribute("integrity");
+  attInteg2.value = "sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p";
+  scriptBS.setAttributeNode(attInteg2);
+
+  let crossOrg2 = document.createAttribute("crossorigin");
+  crossOrg2.value = "anonymous";
+  scriptBS.setAttributeNode(crossOrg2);
+
+  divScript.appendChild(scriptBS);
+  /////////////////////////////////////////////////////////
+
+  let scriptBS2 = document.createElement("script");
+
+  let attScriptBS2 = document.createAttribute("src");
+  attScriptBS2.value = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js";
+  scriptBS2.setAttributeNode(attScriptBS2);
+
+  let attInteg3 = document.createAttribute("integrity");
+  attInteg3.value = "sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT";
+  scriptBS2.setAttributeNode(attInteg3);
+
+  let crossOrg3 = document.createAttribute("crossorigin");
+  crossOrg3.value = "anonymous";
+  scriptBS2.setAttributeNode(crossOrg3);
+
+  divScript.appendChild(scriptBS2);
+
+}
+addScriptElements3();
+////end of addScriptElements3
