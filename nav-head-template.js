@@ -220,11 +220,44 @@ newLi4.setAttributeNode(attClass14);
 newUL.appendChild(newLi4);
 
 let newLi_d = document.createElement("a");
+
 let attClass15 = document.createAttribute("class");
 attClass15.value = "nav-link dropdown-toggle";
 newLi_d.setAttributeNode(attClass15);
 
+let href7 = document.createAttribute("href");
+href7.value= "#";
+newLi_d.setAttributeNode(href7);
+
+let newID = document.createAttribute("id");
+newID.value ="navbarDropdownMenuLink";
+newLi_d.setAttributeNode(newID);
+
+let newRole = document.createAttribute("role");
+newRole.value = "button";
+newLi_d.setAttributeNode(newRole);
+
+let newData = document.createAttribute("data-bs-toggle");
+newData.value = "dropdown";
+newLi_d.setAttributeNode(newData);
+
+let newAria = document.createAttribute("aria-expanded");
+newAria.value = "false";
+newLi_d.setAttributeNode(newAria);
+
+let t7 = document.createTextNode("Drop Down Link");
+newLi_d.appendChild(t7);
+
 newLi4.appendChild(newLi_d);
+
+let newUL2 = document.createElement("ul");
+let attClass16 = document.createAttribute("class");
+attClass16.value = "dropdown-menu";
+newUL2.setAttributeNode(attClass16);
+
+newUL.appendChild(newUL2);
+
+
 ////////////////////////////////////////////////////////////
 
 
