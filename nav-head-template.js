@@ -249,22 +249,73 @@ let t7 = document.createTextNode("Drop Down Link");
 newLi_d.appendChild(t7);
 
 newLi4.appendChild(newLi_d);
+//////////////////////////////////////////////////////////////////////
 
 let newUL2 = document.createElement("ul");
 let attClass16 = document.createAttribute("class");
 attClass16.value = "dropdown-menu";
 newUL2.setAttributeNode(attClass16);
 
-newUL.appendChild(newUL2);
+let ariaLabel = document.createAttribute("aria-labelledby");
+ariaLabel.value = "navbarDropdownMenuLink";
+newUL2.setAttributeNode(ariaLabel);
 
+newLi4.appendChild(newUL2);
 
 ////////////////////////////////////////////////////////////
 
+let newLi5 = document.createElement("li");
+newUL2.appendChild(newLi5);
 
+let newAnch = document.createElement("a");
+let attClass17 = document.createAttribute("class");
+attClass17.value = "dropdown-item";
+newAnch.setAttributeNode(attClass17);
 
+let href8 = document.createAttribute("href");
+href8.value = "#";
+newAnch.setAttributeNode(href8);
 
+let t8 = document.createTextNode("link dropdown 1");
+newAnch.appendChild(t8);
 
+newLi5.appendChild(newAnch);
+////////////////////////////////////////////////////////////
 
+let newLi6 = document.createElement("li");
+newUL2.appendChild(newLi6);
+
+let newAnch2 = document.createElement("a");
+let attClass18 = document.createAttribute("class");
+attClass18.value = "dropdown-item";
+newAnch2.setAttributeNode(attClass18);
+
+let href9 = document.createAttribute("href");
+href9.value = "#";
+newAnch2.setAttributeNode(href9);
+
+let t9 = document.createTextNode("link dropdown 2");
+newAnch2.appendChild(t9);
+
+newLi6.appendChild(newAnch2);
+//////////////////////////////////////////////////////////////////////////
+
+let newLi7 = document.createElement("li");
+newUL2.appendChild(newLi7);
+
+let newAnch3 = document.createElement("a");
+let attClass19 = document.createAttribute("class");
+attClass19.value = "dropdown-item";
+newAnch3.setAttributeNode(attClass19);
+
+let href10 = document.createAttribute("href");
+href10.value = "#";
+newAnch3.setAttributeNode(href10);
+
+let t10 = document.createTextNode("link dropdown 3");
+newAnch3.appendChild(t10);
+
+newLi7.appendChild(newAnch3);
 
 
  }
