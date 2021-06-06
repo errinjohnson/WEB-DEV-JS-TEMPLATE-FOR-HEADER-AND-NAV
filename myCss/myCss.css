@@ -1,0 +1,17 @@
+body {
+    background-image: url(../img/carbon_fibre/carbon_fibre.png);
+    font-family: 'Sofia', serif;
+    background-color: #F0FFF0;
+}
+
+body,
+header {
+    border-radius: 10px;
+    background: linear-gradient(#F0FFF0, #99CCFF);
+    font-size: 1.1rem;
+}
+
+footer {
+    display: none;
+}
+
