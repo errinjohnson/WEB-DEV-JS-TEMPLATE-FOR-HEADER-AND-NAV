@@ -190,9 +190,75 @@ function addNavElements2(){
    newNavli2.appendChild(newLi_b);
 //////////////////////////////////////////////////////////////////
 
+let newNavli3 = document.createElement("li");
+let attClass12 = document.createAttribute("class");
+attClass12.value = "nav-item";
+newNavli3.setAttributeNode(attClass12);
+
+newUL.appendChild(newNavli3);
+
+let newLi_c = document.createElement("a");
+let attClass13 = document.createAttribute("class");
+attClass13.value = "nav-link";
+newLi_c.setAttributeNode(attClass13);
+
+let href6 = document.createAttribute("href");
+href6.value = "#";
+newLi_c.setAttributeNode(href6);
+
+let t6 = document.createTextNode("Title 2");//3
+newLi_c.appendChild(t6);
+
+newNavli3.appendChild(newLi_c);
+///////////////////////////////////////////// dropdown started
+
+let newLi4 = document.createElement("li");
+let attClass14 = document.createAttribute("class");
+attClass14.value = "nav-item dropdown";
+
+newLi4.setAttributeNode(attClass14);
+newUL.appendChild(newLi4);
+
+let newLi_d = document.createElement("a");
+
+let attClass15 = document.createAttribute("class");
+attClass15.value = "nav-link dropdown-toggle";
+newLi_d.setAttributeNode(attClass15);
+
+let href7 = document.createAttribute("href");
+href7.value= "#";
+newLi_d.setAttributeNode(href7);
+
+let newID = document.createAttribute("id");
+newID.value ="navbarDropdownMenuLink";
+newLi_d.setAttributeNode(newID);
+
+let newRole = document.createAttribute("role");
+newRole.value = "button";
+newLi_d.setAttributeNode(newRole);
+
+let newData = document.createAttribute("data-bs-toggle");
+newData.value = "dropdown";
+newLi_d.setAttributeNode(newData);
+
+let newAria = document.createAttribute("aria-expanded");
+newAria.value = "false";
+newLi_d.setAttributeNode(newAria);
+
+let t7 = document.createTextNode("Drop Down Link");
+newLi_d.appendChild(t7);
+
+newLi4.appendChild(newLi_d);
+
+let newUL2 = document.createElement("ul");
+let attClass16 = document.createAttribute("class");
+attClass16.value = "dropdown-menu";
+newUL2.setAttributeNode(attClass16);
+
+newUL.appendChild(newUL2);
 
 
-
+////////////////////////////////////////////////////////////
 
 
 
