@@ -226,11 +226,15 @@ function addNavElements2(){
    newLi_b.setAttributeNode(attClass11);
 
    let href5 = document.createAttribute("href");
-   href5.value = "#";
+   href5.value = "https://errinjohnson.github.io/";
    newLi_b.setAttributeNode(href5);
 
-   let t5 = document.createTextNode("Title");//2
+   let t5 = document.createTextNode("IoT Workshop");//2
    newLi_b.appendChild(t5);
+
+   let attTarget = document.createAttribute("target");
+   attTarget.value = "__blank";
+   newLi_b.setAttributeNode(attTarget);
 
    newNavli2.appendChild(newLi_b);
 //////////////////////////////////////////////////////////////////
