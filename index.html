@@ -1,10 +1,79 @@
 <html>
-
-  <head id="include"></head>
+  <head id="include">
+  <style>
+      .col {
+      display: table-cell;
+      padding: 16px;
+          }
+  </style>
+  </head>
   <div id="navBar1"></div>
   <body>
     <h4 class="text-center">Errin's Software Portfolio</h4>
-    
+    <h5 class="text-center">UnderConstruction!!</h5>
+    <div id=last_modified></div>
+    <div>
+
+      <div class="container">
+  <div class="row align-items-start">
+    <div class="col w-100">
+      <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Submit User Feedback
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Feedback | Survey</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfruuK97-vuuG0UgjgD07cixP9PlqB35a7GS5usncifFFN2zg/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="col w-100">
+        One of three columns
+      </div>
+    <div class="col w-100">
+      One of three columns
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col w-100">
+      <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfruuK97-vuuG0UgjgD07cixP9PlqB35a7GS5usncifFFN2zg/viewanalytics" style="text-decoration: none"; target="_blank">Previous Users' Feedback</a></div>
+    </div>
+    <div class="col w-100">
+      One of three columns
+    </div>
+    <div class="col w-100">
+      One of three columns
+    </div>
+  </div>
+  <div class="row align-items-end">
+    <div class="col w-100">
+      One of three columns
+    </div>
+    <div class="col w-100">
+      One of three columns
+    </div>
+    <div class="col w-100">
+      One of three columns
+    </div>
+  </div>
+</div>
+
+  </div>
+
     <div id="script-bootstrap"></div>
   </body>
   <script src="nav-head-template.js"></script>

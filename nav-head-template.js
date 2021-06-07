@@ -1,3 +1,6 @@
+
+
+
 function addHeadElements() {
     //START get element by id, create element, create text node
       let include1 = document.getElementById("include");
@@ -91,6 +94,33 @@ function addHeadElements() {
     newLink2.setAttributeNode(attRel2);
 
     include1.appendChild(newLink2);
+
+    //add Link4 with attributes
+    let newLink4 = document.createElement("link");
+      //
+    let href4 = document.createAttribute("href");
+    href4.value = "https://fonts.gstatic.com";
+    newLink4.setAttributeNode(href4);
+      //
+    let attRel4 = document.createAttribute("rel");
+    attRel4.value = "preconnect";
+    newLink4.setAttributeNode(attRel4);
+
+    include1.appendChild(newLink4);
+
+    //add Link3 with attributes
+    let newLink3 = document.createElement("link");
+      //
+    let href3 = document.createAttribute("href");
+    href3.value = "https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap";
+    newLink3.setAttributeNode(href3);
+      //
+    let attRel3 = document.createAttribute("rel");
+    attRel3.value = "stylesheet";
+    newLink3.setAttributeNode(attRel3);
+
+    include1.appendChild(newLink3);
+
   }  //end of link2
   addHeadElements();
 //////////////////////////////////////////////////////////END OF HEAD ELEMENTS//////////////
@@ -430,3 +460,27 @@ function addScriptElements3(){
 }
 addScriptElements3();
 ////end of addScriptElements3/////////////////////////////////////////////////////////end of script elements
+
+function lastModified(){
+
+
+  let getDiv = document.getElementById("last_modified");
+
+  let updateTime = document.lastModified;
+  getDiv.innerHTML = updateTime;
+
+  let paraLastMod = document.createElement("p");
+  let modID  = document.createAttribute("id");
+  modID.value = "paraText";
+  paraLastMod.setAttributeNode(modID);
+
+  let t2 = document.createTextNode(" [website last updated] ");
+  getDiv.appendChild(t2);
+
+  getDiv.appendChild(paraLastMod);
+
+
+
+
+}
+lastModified();
