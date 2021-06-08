@@ -154,7 +154,7 @@ function addNavElements2(){
    href3.value = "#";
    newNav3.setAttributeNode(href3);
 
-   let t2 = document.createTextNode("Navbar");
+   let t2 = document.createTextNode("Connect The Dots...");
    newNav3.appendChild(t2);
 
    newNav2.appendChild(newNav3);//3rd level of nesting
