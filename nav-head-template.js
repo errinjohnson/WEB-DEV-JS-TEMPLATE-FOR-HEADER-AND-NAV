@@ -241,7 +241,7 @@ function addNavElements2(){
    newLi_a.setAttributeNode(attAria3);
 
    let href4 = document.createAttribute("href");
-   href4.value = "#";
+   href4.value = "index.html";
    newLi_a.setAttributeNode(href4);
 
    let t3 = document.createTextNode("HOME"); //////////////HOME MENU LINK//////////////
@@ -288,14 +288,14 @@ attClass13.value = "nav-link";
 newLi_c.setAttributeNode(attClass13);
 
 let href6 = document.createAttribute("href");
-href6.value = "#";
+href6.value = "net-db.html";
 newLi_c.setAttributeNode(href6);
 
 let t6 = document.createTextNode("Nursing Eval Tool | Database");//////////////N.E.T. MENU LINK///////////
 newLi_c.appendChild(t6);
 
 let attTarget2 = document.createAttribute("target");
-attTarget2.value = "__blank";
+// attTarget2.value = "__blank";
 newLi_c.setAttributeNode(attTarget2);
 
 newNavli3.appendChild(newLi_c);
