@@ -365,7 +365,7 @@ let href8 = document.createAttribute("href");
 href8.value = "https://www.eventcombo.com/o/rockit-women-36638";
 newAnch.setAttributeNode(href8);
 
-let t8 = document.createTextNode("Event Combo Web Pages");////////////////////////////////////////////////////////Event Combo Link
+let t8 = document.createTextNode("Customized Event Combo Web Pages");////////////////////////////////////////////////////////Event Combo Link
 newAnch.appendChild(t8);
 
 let attTarget3 = document.createAttribute("target");
