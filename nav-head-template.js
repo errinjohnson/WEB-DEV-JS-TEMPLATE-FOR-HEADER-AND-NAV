@@ -489,6 +489,6 @@ function copyRight() {
 
   elPara.appendChild(t111);
   copyR.appendChild(elPara);
-    // attImgCopyR.value = "https://img.icons8.com/dusk/64/000000/copyright.png";
+
 }
 copyRight();
