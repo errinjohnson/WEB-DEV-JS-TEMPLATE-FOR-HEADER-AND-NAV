@@ -1,6 +1,3 @@
-
-
-
 function addHeadElements() {
     //START get element by id, create element, create text node
       let include1 = document.getElementById("include");
@@ -463,7 +460,6 @@ addScriptElements3();
 
 function lastModified(){
 
-
   let getDiv = document.getElementById("last_modified");
 
   let updateTime = document.lastModified;
@@ -474,13 +470,25 @@ function lastModified(){
   modID.value = "paraText";
   paraLastMod.setAttributeNode(modID);
 
-  let t2 = document.createTextNode(" [website last updated] ");
-  getDiv.appendChild(t2);
+  let t2 = document.createTextNode(" [website last updated]");
+  paraLastMod.appendChild(t2);
 
   getDiv.appendChild(paraLastMod);
 
-
-
-
 }
 lastModified();
+////////////////////////////////////////////////////////////////////////////////////////end of last lastModified
+//////////start of copyRight////////////////////////////////////////////////////////////////////////////////////
+function copyRight() {
+  let copyR = document.getElementById("copyRight");
+  let elPara = document.createElement("p");
+  let attCenter = document.createAttribute("class");
+  attCenter.value = "text-center";
+  elPara.setAttributeNode(attCenter);
+  let t111 = document.createTextNode("Website Copyright 2015-2021 Errin E Johnson, All Rights Reserved.");
+
+  elPara.appendChild(t111);
+  copyR.appendChild(elPara);
+    // attImgCopyR.value = "https://img.icons8.com/dusk/64/000000/copyright.png";
+}
+copyRight();
