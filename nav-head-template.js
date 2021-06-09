@@ -384,7 +384,7 @@ let href9 = document.createAttribute("href");
 href9.value = "https://jsfiddle.net/errinjohnson/rtv1xLzc/13/";
 newAnch2.setAttributeNode(href9);
 
-let t9 = document.createTextNode("Dyamic Navbar Template with JS");//////////////////////////////////////////////////////////link dropdown2
+let t9 = document.createTextNode("Virtual Navbar Template with JS");//////////////////////////////////////////////////////////link dropdown2
 newAnch2.appendChild(t9);
 
 let attTarget4 = document.createAttribute("target");
@@ -406,7 +406,7 @@ let href10 = document.createAttribute("href");
 href10.value = "#";
 newAnch3.setAttributeNode(href10);
 
-let t10 = document.createTextNode("link dropdown 3");/////////////////////////////////////////////////////link dropdown3
+let t10 = document.createTextNode("Next Project Virtual Template with Vue.js");/////////////////////////////////////////////////////link dropdown3
 newAnch3.appendChild(t10);
 
 newLi7.appendChild(newAnch3);
