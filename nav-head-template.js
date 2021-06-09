@@ -270,7 +270,60 @@ function addNavElements2(){
    newLi_b.setAttributeNode(attTarget);
 
    newNavli2.appendChild(newLi_b);
-//////////////////////////////////////////////////////////////////
+
+/////START1 BOOTSTRAP DROPDOWN MENU//////////////////////////////////////////////////////////////////
+
+let newLi44 = document.createElement("li");
+let attClass144 = document.createAttribute("class");
+attClass144.value = "nav-item dropdown";
+
+newLi44.setAttributeNode(attClass144);
+newUL.appendChild(newLi44);
+
+let newLi_dd = document.createElement("a");
+
+let attClass155 = document.createAttribute("class");
+attClass155.value = "nav-link dropdown-toggle";
+newLi_dd.setAttributeNode(attClass155);
+
+let href77 = document.createAttribute("href");
+href77.value= "#";
+newLi_dd.setAttributeNode(href77);
+
+let newIDD = document.createAttribute("id");
+newIDD.value ="navbarDropdownMenuLink";
+newLi_dd.setAttributeNode(newIDD);
+
+let newRolee = document.createAttribute("role");
+newRolee.value = "button";
+newLi_dd.setAttributeNode(newRolee);
+
+let newDataa = document.createAttribute("data-bs-toggle");
+newDataa.value = "dropdown";
+newLi_dd.setAttributeNode(newDataa);
+
+let newAriaa = document.createAttribute("aria-expanded");
+newAriaa.value = "false";
+newLi_dd.setAttributeNode(newAriaa);
+
+let t77 = document.createTextNode("NET");//////////////NET//////////////////////////////////
+newLi_dd.appendChild(t77);
+
+newLi44.appendChild(newLi_dd);
+//////////////////////////////////////////////////////////////////////////////////////////
+
+let newUL22 = document.createElement("ul");
+let attClass166 = document.createAttribute("class");
+attClass166.value = "dropdown-menu";
+newUL22.setAttributeNode(attClass166);
+
+let ariaLabell = document.createAttribute("aria-labelledby");
+ariaLabell.value = "navbarDropdownMenuLink";
+newUL22.setAttributeNode(ariaLabell);
+
+newLi44.appendChild(newUL22);
+
+////////////////////////////////////////////////////////////////////////////////////////
 
 let newNavli3 = document.createElement("li");
 let attClass12 = document.createAttribute("class");
@@ -288,7 +341,7 @@ let href6 = document.createAttribute("href");
 href6.value = "net-db.html";
 newLi_c.setAttributeNode(href6);
 
-let t6 = document.createTextNode("Nursing Eval Tool | Database");//////////////N.E.T. MENU LINK///////////
+let t6 = document.createTextNode("Nursing Eval Tool | Database");///NURSING EVAL TOOL MENU LINK///////////
 newLi_c.appendChild(t6);
 
 let attTarget2 = document.createAttribute("target");
@@ -296,7 +349,10 @@ let attTarget2 = document.createAttribute("target");
 newLi_c.setAttributeNode(attTarget2);
 
 newNavli3.appendChild(newLi_c);
-//////////////////////////////////////////////////////////START BOOTSTRAP DROPDOWN MENU//////////////
+newUL22.appendChild(newNavli3);
+//////////////////////////////////////////////////////////////END1 of BOOSTRAP Drowdown MENU //////////////
+
+///START2 BOOTSTRAP DROPDOWN MENU/////////////////////////////////////////////////////////////////////
 
 let newLi4 = document.createElement("li");
 let attClass14 = document.createAttribute("class");
@@ -335,7 +391,7 @@ let t7 = document.createTextNode("Other IT Projects");//////////////OTHER PROJEC
 newLi_d.appendChild(t7);
 
 newLi4.appendChild(newLi_d);
-////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let newUL2 = document.createElement("ul");
 let attClass16 = document.createAttribute("class");
@@ -348,7 +404,7 @@ newUL2.setAttributeNode(ariaLabel);
 
 newLi4.appendChild(newUL2);
 
-////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let newLi5 = document.createElement("li");
 newUL2.appendChild(newLi5);
@@ -362,7 +418,7 @@ let href8 = document.createAttribute("href");
 href8.value = "https://www.eventcombo.com/o/rockit-women-36638";
 newAnch.setAttributeNode(href8);
 
-let t8 = document.createTextNode("Customized Event Combo Web Pages");////////////////////////////////////////////////////////Event Combo Link
+let t8 = document.createTextNode("Customized Event Combo Web Pages");/////////////////////Event Combo Link
 newAnch.appendChild(t8);
 
 let attTarget3 = document.createAttribute("target");
@@ -384,7 +440,7 @@ let href9 = document.createAttribute("href");
 href9.value = "https://jsfiddle.net/errinjohnson/rtv1xLzc/13/";
 newAnch2.setAttributeNode(href9);
 
-let t9 = document.createTextNode("Virtual Navbar Template with JS");//////////////////////////////////////////////////////////link dropdown2
+let t9 = document.createTextNode("Virtual Navbar Template with JS");//////////////////////Virtual Navvbar
 newAnch2.appendChild(t9);
 
 let attTarget4 = document.createAttribute("target");
@@ -392,7 +448,7 @@ attTarget4.value = "__blank";
 newAnch2.setAttributeNode(attTarget4);
 
 newLi6.appendChild(newAnch2);
-//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let newLi7 = document.createElement("li");
 newUL2.appendChild(newLi7);
@@ -406,17 +462,17 @@ let href10 = document.createAttribute("href");
 href10.value = "#";
 newAnch3.setAttributeNode(href10);
 
-let t10 = document.createTextNode("Next Project Virtual Template with Vue.js");/////////////////////////////////////////////////////link dropdown3
+let t10 = document.createTextNode("Next Project [Virtual Template with Vue.js]");/////Next Project [Virtual Template with Vue.js]
 newAnch3.appendChild(t10);
 
 newLi7.appendChild(newAnch3);
-/////////////////////////////////////////////
+
  }
 addNavElements2();
 // // // END of addNavElements2/////////////////////////////////////////////////////////////End of Navigation//////////
 
 
-//////////////////////////////////////////////////////////////////////////////////////start of script elements//////////
+///Start of script elements///////////////////////////////////////////////////////////////////////////////////////////
 function addScriptElements3(){
 
   let divScript = document.getElementById("script-bootstrap");
