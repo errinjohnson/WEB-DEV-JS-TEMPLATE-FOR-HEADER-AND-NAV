@@ -56,13 +56,13 @@ function addHeadElements() {
       newDiv.appendChild(t);
 
       include1.appendChild(newDiv);
-      ////////////////////////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////
           //add link with attributes
     let newLink = document.createElement("link");
       //
-    let href1 = document.createAttribute("href");
-    href1.value = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css";
-    newLink.setAttributeNode(href1);
+    let href = document.createAttribute("href");
+    href.value = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css";
+    newLink.setAttributeNode(href);
       //
     let attRel = document.createAttribute("rel");
     attRel.value = "stylesheet";
@@ -77,8 +77,21 @@ function addHeadElements() {
     newLink.setAttributeNode(crossOrg);
 
     include1.appendChild(newLink);
-    //end of link
-
+    /////////////////////////////////////////////////////////////////////////
+    ////////add link1 with attributes
+    let newLink1 = document.createElement("link");
+    //
+    let href1 = document.createAttribute("href");
+    href1.value = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css";
+    newLink1.setAttributeNode(href1);
+    //
+    let attRel1 = document.createAttribute("rel");
+    attRel1.value = "stylesheet";
+    newLink1.setAttributeNode(attRel1);
+    //
+    include1.appendChild(newLink1);
+    //
+    ////////////////////////////////////////////////////////////////////////////
     //add Link2 with attributes
     let newLink2 = document.createElement("link");
       //
@@ -92,33 +105,33 @@ function addHeadElements() {
 
     include1.appendChild(newLink2);
 
-    //add Link4 with attributes
-    let newLink4 = document.createElement("link");
-      //
-    let href4 = document.createAttribute("href");
-    href4.value = "https://fonts.gstatic.com";
-    newLink4.setAttributeNode(href4);
-      //
-    let attRel4 = document.createAttribute("rel");
-    attRel4.value = "preconnect";
-    newLink4.setAttributeNode(attRel4);
-
-    include1.appendChild(newLink4);
-
     //add Link3 with attributes
     let newLink3 = document.createElement("link");
       //
     let href3 = document.createAttribute("href");
-    href3.value = "https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap";
+    href3.value = "https://fonts.gstatic.com";
     newLink3.setAttributeNode(href3);
       //
     let attRel3 = document.createAttribute("rel");
-    attRel3.value = "stylesheet";
+    attRel3.value = "preconnect";
     newLink3.setAttributeNode(attRel3);
 
     include1.appendChild(newLink3);
 
-  }  //end of link2
+    //add Link4 with attributes
+    let newLink4 = document.createElement("link");
+      //
+    let href4 = document.createAttribute("href");
+    href4.value = "https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap";
+    newLink4.setAttributeNode(href4);
+      //
+    let attRel4 = document.createAttribute("rel");
+    attRel4.value = "stylesheet";
+    newLink4.setAttributeNode(attRel4);
+
+    include1.appendChild(newLink4);
+
+  }  //end oF HEAD LINKS 0-4
   addHeadElements();
 //////////////////////////////////////////////////////////END OF HEAD ELEMENTS//////////////
 
