@@ -9,10 +9,11 @@
 
 button#btn {
     padding: 15px;
-    color: blue;
+    color: black;
     font-family: georgia;
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
     text-transform: uppercase;
-    background-color: #FFEBCD;
     border-radius: 10px;
 }
 
@@ -133,14 +134,11 @@ section.eventBanner {
     }
   } */
 
-/*
+
     body {
-    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/background-1014963_1280.jpg");
-    background-repeat: round;
-    background-position: center;
-    background-attachment: scroll;
+    background-color: ivory;
 }
-*/
+
 
 /* for safari apple products*/
 body {
