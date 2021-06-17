@@ -1,7 +1,10 @@
 #readMore {
     display: none;
 }
-
+/*//event flyer section*/
+.eventFlyer {
+    display: none;
+}
 /* js 'read more' script*/
 .c10, .s1 {
   margin: 0;
@@ -109,9 +112,15 @@ a:visited {
     color: black;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 section.eventBanner {
     background: rgb(199,0,126);
     background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 /*section.eventBanner{
@@ -135,13 +144,3 @@ section.eventBanner {
   } */
 
 
-    body {
-    background-color: ivory;
-}
-
-
-/* for safari apple products*/
-body {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-}

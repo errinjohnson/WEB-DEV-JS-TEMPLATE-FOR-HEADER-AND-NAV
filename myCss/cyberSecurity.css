@@ -1,55 +1,26 @@
 #readMore {
     display: none;
 }
-
-/* js 'read more' script*/
-div#myID {
-    width: 100%;
-}
-
-div#myID img {
-    margin: auto;
-    padding: 2px 20px 40px 2px;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-@media screen and (max-width: 350px) {
-    div#myID img {
-        max-width: 150px;
-        max-height: 150px;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    div#myID img {
-        max-width: 250px;
-        max-height: 250px;
-    }
-}
-
-header {
+/*//event flyer section*/
+.eventFlyer {
     display: none;
 }
-
-section.eventBanner {
-    margin-top: -25px;
-}
-
-div#viewEvent {
-    margin-top: -50px;
+/* js 'read more' script*/
+.c10, .s1 {
+    margin: 0;
 }
 
 button#btn {
     padding: 15px;
-    color: blue;
+    color: black;
     font-family: georgia;
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
     text-transform: uppercase;
-    background-color: #FFEBCD;
     border-radius: 10px;
 }
 
-footer,
+footer, header,
 .text-links li,
 .text-links li a {
     display: none;
@@ -119,32 +90,30 @@ c12.tides {
 
 a {
     color: #E135A2;
-    text-decoration: none;
 }
 
-a:visited {
-    color: #8A2BE2;
-}
+    a:visited {
+        color: #8A2BE2;
+    }
 
 .red-heading,
 .tot,
 .multiDateVenueText,
 .organiserBox a {
-    color: mediumpurple;
+    color: black;
 }
 
-.enterPromoCode {
-    background-color: #b380ff;
-}
-.eventFlyer { display: none;}
-
-.eventFlyerDes,
 .buttons a.makeLive,
 .buttons,
 .enterPromoCode,
 .tot {
-  background: rgb(141,170,208);
-  background: linear-gradient(90deg, rgba(141,170,208,0.5550595238095238) 35%, rgba(114,161,217,0.4654236694677871) 100%);
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
+    color: black;
+}
+
+body {
+    background-color: whitesmoke;
 }
 
 section.eventBanner {

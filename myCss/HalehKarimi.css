@@ -1,55 +1,27 @@
 #readMore {
     display: none;
 }
-
-/* js 'read more' script*/
-div#myID {
-    width: 100%;
-}
-
-div#myID img {
-    margin: auto;
-    padding: 2px 20px 40px 2px;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-@media screen and (max-width: 350px) {
-    div#myID img {
-        max-width: 150px;
-        max-height: 150px;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    div#myID img {
-        max-width: 250px;
-        max-height: 250px;
-    }
-}
-
-header {
+/*//event flyer section*/
+.eventFlyer {
     display: none;
 }
 
-section.eventBanner {
-    margin-top: -25px;
-}
-.eventFlyer { display: none;}
-div#viewEvent {
-    margin-top: -50px;
+/* js 'read more' script*/
+.c10, .s1 {
+    margin: 0;
 }
 
 button#btn {
     padding: 15px;
-    color: blue;
+    color: black;
     font-family: georgia;
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
     text-transform: uppercase;
-    background-color: #FFEBCD;
     border-radius: 10px;
 }
 
-footer,
+footer, header,
 .text-links li,
 .text-links li a {
     display: none;
@@ -121,9 +93,9 @@ a {
     color: #E135A2;
 }
 
-a:visited {
-    color: #8A2BE2;
-}
+    a:visited {
+        color: #8A2BE2;
+    }
 
 .red-heading,
 .tot,
@@ -132,19 +104,19 @@ a:visited {
     color: black;
 }
 
-.enterPromoCode {
-    background-color: #b380ff;
-}
-
-.eventFlyerDes,
-.buttons,
 .buttons a.makeLive,
-.enterPromoCode {
-    background: rgb(248, 249, 162);
-    background: linear-gradient(145deg, rgba(248, 249, 162, 0.5074229520909926) 37%, rgba(239, 244, 117, 0.49341734985009633) 80%);
+.buttons,
+.enterPromoCode,
+.tot {
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
     color: black;
 }
- /*background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/railway-1758208_640.jpg.png");*/
+body {
+    background-color: whitesmoke;
+}
+  
+ 
 section.eventBanner {
     background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/Pixabay-TheDigitalArtist871x468.jpg");
     background-color: transparent;
@@ -163,12 +135,4 @@ section.eventBanner {
     }
 }
 
-body {
-/*    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/background-texture-2110724_1920.jpg");*/
-}
-
-/* for safari apple products*/
-body {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-}
+ 
