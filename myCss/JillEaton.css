@@ -9,6 +9,10 @@
 .c10, .s1 {
     margin: 0;
 }
+#myID a img {
+    max-width: 250px;
+    max-height: 250px;
+}
 
 button#btn {
     padding: 15px;
@@ -119,44 +123,11 @@ body {
 
 section.eventBanner {
     background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/genderJillE720x289.png");
-    background-size: cover;
     background-color: transparent !important;
-    min-width: 100%;
-    min-height: 300px;
-    margin-top: -50px;
-    background-attachment: scroll;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-@media screen and (max-device-width:900px) {
-
-    .event-name,
-    .vanue-name {
-        color: black;
-        font-weight: 900;
-    }
-
-    .eventVanue {
-        margin-top: 0;
-        opacity: .7;
-    }
-
-    .event-name {
-        font-size: 1.2em;
-    }
-
-    .adiv {
-        font-size: 1em;
-        color: black;
-        font-weight: 500;
-    }
-
-    section.eventBanner {
-/*        background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/railway-1758208_640.jpg.png");*/
-        background-color: transparent !important;
-        background-size: contain;
-        background-attachment: scroll;
-        min-height: 600px;
-        margin-bottom: -230px;
-        margin-top: 0;
-    }
-}
+/*
+    @media screen and (max-device-width:900px) {}
+*/

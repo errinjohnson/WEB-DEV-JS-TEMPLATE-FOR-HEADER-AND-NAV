@@ -9,6 +9,11 @@
 .c10, .s1 {
     margin: 0;
 }
+#myID a img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
 
 button#btn {
     padding: 15px;
@@ -119,13 +124,12 @@ body {
 section.eventBanner {
     background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/woman-chenspec-768x376.jpg");
     background-color: transparent;
-    background-size: cover;
-    background-attachment: scroll;
-    /* needed for safari apple products */
-    min-height: 600px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-@media screen and (max-device-width: 768px) {
+/*
+    @media screen and (max-device-width: 768px) {
     section.eventBanner {
         background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/woman-chenspec-462x226.jpg");
         background-size: cover;
@@ -133,4 +137,5 @@ section.eventBanner {
         min-height: 425px;
     }
 }
+*/
 

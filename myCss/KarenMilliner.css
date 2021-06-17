@@ -10,6 +10,10 @@
 .c10, .s1 {
     margin: 0;
 }
+#myID a img {
+    max-width: 250px;
+    max-height: 250px;
+}
 
 button#btn {
     padding: 15px;
@@ -116,20 +120,21 @@ a {
 body {
     background-color: whitesmoke;
 }
-  
+
 section.eventBanner {
     background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/networking_img.gif");
     background-color: transparent;
-    background-size: cover;
-    background-attachment: scroll;
-    /* needed for safari apple products */
-    min-height: 425px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-@media screen and (max-device-width: 768px) {
+/*
+    @media screen and (max-device-width: 768px) {
     section.eventBanner {
         background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/networking_img.gif");
-        background-size: cover;
-        background-attachment: scroll;
+        max-width: 960px;
+        margin: 0 auto;
     }
 }
+
+*/
