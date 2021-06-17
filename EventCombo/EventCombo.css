@@ -1,7 +1,10 @@
 #readMore {
     display: none;
 }
-
+/*//event flyer section*/
+.eventFlyer {
+    display: none;
+}
 /* js 'read more' script*/
 .c10, .s1 {
   margin: 0;
@@ -9,10 +12,11 @@
 
 button#btn {
     padding: 15px;
-    color: blue;
+    color: black;
     font-family: georgia;
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
     text-transform: uppercase;
-    background-color: #FFEBCD;
     border-radius: 10px;
 }
 
@@ -108,9 +112,15 @@ a:visited {
     color: black;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
 section.eventBanner {
     background: rgb(199,0,126);
     background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 /*section.eventBanner{
@@ -133,17 +143,4 @@ section.eventBanner {
     }
   } */
 
-/*
-    body {
-    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/background-1014963_1280.jpg");
-    background-repeat: round;
-    background-position: center;
-    background-attachment: scroll;
-}
-*/
 
-/* for safari apple products*/
-body {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-}

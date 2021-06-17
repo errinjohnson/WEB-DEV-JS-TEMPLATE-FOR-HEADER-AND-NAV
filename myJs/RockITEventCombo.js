@@ -25,10 +25,12 @@ function addElement() {
     newContent.setAttribute("href", "https://rockitwomen.com");
     newContent.setAttribute("target", "__blank");
     newContent.setAttribute("class", "mx-auto");
+        
     newDiv.appendChild(newContent);
 
     let newContent2 = document.createElement("img");
     newContent2.src = "https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/RockIT_Logo.jpg";
+    newContent2.setAttribute("class", "rounded");
 
     newContent.appendChild(newContent2);
 

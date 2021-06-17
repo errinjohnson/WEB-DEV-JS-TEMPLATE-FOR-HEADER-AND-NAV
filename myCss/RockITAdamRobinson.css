@@ -1,55 +1,26 @@
 #readMore {
     display: none;
 }
-
-/* js 'read more' script*/
-div#myID {
-    width: 100%;
-}
-
-div#myID img {
-    margin: auto;
-    padding: 2px 20px 40px 2px;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-@media screen and (max-width: 350px) {
-    div#myID img {
-        max-width: 150px;
-        max-height: 150px;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    div#myID img {
-        max-width: 250px;
-        max-height: 250px;
-    }
-}
-
-header {
+/*//event flyer section*/
+.eventFlyer {
     display: none;
 }
-
-section.eventBanner {
-    margin-top: -25px;
-}
-.eventFlyer { display: none;}
-div#viewEvent {
-    margin-top: -50px;
+/* js 'read more' script*/
+.c10, .s1 {
+    margin: 0;
 }
 
 button#btn {
     padding: 15px;
-    color: blue;
+    color: black;
     font-family: georgia;
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
     text-transform: uppercase;
-    background-color: #FFEBCD;
     border-radius: 10px;
 }
 
-footer,
+footer, header,
 .text-links li,
 .text-links li a {
     display: none;
@@ -118,14 +89,13 @@ c12.tides {
 }
 
 a {
-    color: blue;
+    color: #E135A2;
 }
 
-a:visited {
-    color: #8A2BE2;
-}
+    a:visited {
+        color: #8A2BE2;
+    }
 
-.enterPromoCode,
 .red-heading,
 .tot,
 .multiDateVenueText,
@@ -133,13 +103,17 @@ a:visited {
     color: black;
 }
 
-.eventFlyerDes,
-.buttons,
 .buttons a.makeLive,
+.buttons,
 .enterPromoCode,
 .tot {
-    background: rgb(144, 31, 166);
-    background: linear-gradient(140deg, rgba(144, 31, 166, 0.7847338764607406) 49%, rgba(169, 119, 230, 0.49341734985009633) 90%);
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
+    color: black;
+}
+
+body {
+    background-color: whitesmoke;
 }
 
 section.eventBanner {
@@ -160,12 +134,3 @@ section.eventBanner {
     }
 }
 
-body {
-/*    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/americana-1512910_1280.png");*/
-}
-
-/* for safari apple products*/
-body {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-}

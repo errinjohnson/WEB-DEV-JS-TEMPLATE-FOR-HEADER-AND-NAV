@@ -1,61 +1,26 @@
-/*
-<link rel="stylesheet" title="Jill Eaton" href="https://s3-us-west-2.amazonaws.com/alchemymomentum.com/myCss/JillEaton.css"/>
-<script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/alchemymomentum.com/myJs/RockITEventCombo.js"></script>
-<p>Webinar refunds available 4 days prior to event start date; However, your seat can be transferred.</p>*/
 #readMore {
     display: none;
 }
-
-/* js 'read more' script*/
-div#myID {
-    width: 100%;
-}
-
-div#myID img {
-    margin: auto;
-    padding: 2px 20px 40px 2px;
-    max-width: 200px;
-    max-height: 200px;
-}
-
-@media screen and (max-width: 350px) {
-    div#myID img {
-        max-width: 150px;
-        max-height: 150px;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    div#myID img {
-        max-width: 250px;
-        max-height: 250px;
-    }
-}
-
-header {
+/*//event flyer section*/
+.eventFlyer {
     display: none;
 }
-
-section.eventBanner {
-    margin-top: -25px;
-}
-/*//event flyer section*/
-.eventFlyer { display: none;}
-
-div#viewEvent {
-    margin-top: -50px;
+/* js 'read more' script*/
+.c10, .s1 {
+    margin: 0;
 }
 
 button#btn {
     padding: 15px;
-    color: blue;
+    color: black;
     font-family: georgia;
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
     text-transform: uppercase;
-    background-color: #FFEBCD;
     border-radius: 10px;
 }
 
-footer,
+footer, header,
 .text-links li,
 .text-links li a {
     display: none;
@@ -64,30 +29,24 @@ footer,
 .event-name,
 .vanue-name {
     color: black;
-    font-weight: 400;
-}
-
-.event-name {
-    font-size: 1.4em;
+    font-weight: 900;
+    text-shadow: 2.5px 2.5px white;
 }
 
 .adiv {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: black;
-    font-weight: 400;
+    text-shadow: 2.5px 2.5px white;
+    font-weight: 600;
 }
 
 .buttons {
     background: transparent !important;
 }
 
+#viewEvent,
 .eventVanue {
-    background-color: aliceblue;
-    opacity: .9;
-}
-
-#viewEvent {
-    background: transparent !important;
+    background: transparent;
 }
 
 html,
@@ -105,7 +64,7 @@ body,
 .organiserBox span a,
 .text-links li a,
 .eventFlyerDes {
-    font-family: georgia, Times, serif !important;
+    font-family: georgia, Times !important;
 }
 
 .ticdes p,
@@ -133,36 +92,32 @@ a {
     color: #E135A2;
 }
 
-a:visited {
-    color: #8A2BE2;
-}
+    a:visited {
+        color: #8A2BE2;
+    }
 
 .red-heading,
 .tot,
 .multiDateVenueText,
 .organiserBox a {
-    color: mediumpurple;
-}
-
-.enterPromoCode {
-    background-color: #b380ff;
-}
-
-.eventFlyerDes,
-.buttons,
-.buttons a.makeLive,
-.enterPromoCode {
-    background: rgb(245, 86, 236);
-    background: linear-gradient(90deg, rgba(245, 86, 236, 0.5130251929873512) 8%, rgba(137, 214, 215, 0.5130251929873512) 28%, rgba(186, 171, 236, 0.5130251929873512) 65%);
     color: black;
 }
 
-.eventVanue {
-    margin-top: 300px;
+.buttons a.makeLive,
+.buttons,
+.enterPromoCode,
+.tot {
+    background: rgb(199,0,126);
+    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
+    color: black;
 }
 
+body {
+    background-color: whitesmoke;
+}
+
+
 section.eventBanner {
-/*    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/genderJillE2.png");*/
     background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/genderJillE720x289.png");
     background-size: cover;
     background-color: transparent !important;
@@ -170,7 +125,6 @@ section.eventBanner {
     min-height: 300px;
     margin-top: -50px;
     background-attachment: scroll;
-    /* needed for safari apple products */
 }
 
 @media screen and (max-device-width:900px) {
@@ -205,14 +159,4 @@ section.eventBanner {
         margin-bottom: -230px;
         margin-top: 0;
     }
-}
-
-body {
-/*    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/1095.jpg");*/
-}
-
-/* needed for safari apple products */
-body {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
 }
