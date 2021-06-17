@@ -10,6 +10,10 @@
 .c10, .s1 {
     margin: 0;
 }
+#myID a img {
+    max-width: 250px;
+    max-height: 250px;
+}
 
 button#btn {
     padding: 15px;

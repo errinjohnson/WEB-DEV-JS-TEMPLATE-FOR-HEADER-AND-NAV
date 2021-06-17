@@ -118,16 +118,17 @@ body {
 section.eventBanner {
     background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/butterfly-ylanite-koppens-2820125.jpg");
     background-color: transparent;
-    background-size: cover;
-    background-attachment: scroll;
-    /* needed for safari apple products */
-    min-height: 425px;
+    max-width: 960px;
+    margin: 0 auto;
 }
 
+
+/*
 @media screen and (max-device-width: 768px) {
     section.eventBanner {
         background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/butterfly-ylanite-koppens593x247.jpg");
-        background-size: cover;
-        background-attachment: scroll;
+        max-width: 960px;
+        margin: 0 auto;
+      }
     }
-}
+*/

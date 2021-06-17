@@ -9,6 +9,10 @@
 .c10, .s1 {
     margin: 0;
 }
+#myID a img {
+    max-width: 250px;
+    max-height: 250px;
+}
 
 button#btn {
     padding: 15px;
@@ -118,18 +122,13 @@ body {
 
 section.eventBanner {
     background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/CyberSecurityBootcampRockItWoment.jpg")!important;
-
-    min-height: 825px;
+    min-height: 625px;
 }
 
-@media screen and (max-device-width: 768px) {
+/*
+/@media screen and (max-device-width: 768px) {
     section.eventBanner {
-    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/CyberSecurityBootcampRockItWoment.jpg")!important;
+        background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/CyberSecurityBootcampRockItWoment.jpg") !important;
     }
 }
-
-/* for safari apple products*/
-body {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-}
+*/
