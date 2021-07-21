@@ -259,6 +259,31 @@ function addNavElements2(){
 
    newNavli.appendChild(newLi_a);
 ////////////////////////////////////////////////////////
+let newNavli2_a = document.createElement("li");
+let attClass10_c = document.createAttribute("class");
+attClass10_c.value = "nav-item";
+newNavli2_a.setAttributeNode(attClass10_c);
+
+newUL.appendChild(newNavli2_a);
+
+let newLi_c1 = document.createElement("a");
+let attClass11_c = document.createAttribute("class");
+attClass11_c.value = "nav-link";
+newLi_c1.setAttributeNode(attClass11_c);
+
+let href5_c = document.createAttribute("href");
+href5_c.value = "CodeTesting/codeTestJS.html";
+newLi_c1.setAttributeNode(href5_c);
+
+let t5_c = document.createTextNode("Featured JS Project"); //////////////FEATURED PROJECT/////////////////////
+newLi_c1.appendChild(t5_c);
+
+let attTarget_c = document.createAttribute("target");
+attTarget_c.value = "__blank";
+newLi_c1.setAttributeNode(attTarget_c);
+
+newNavli2_a.appendChild(newLi_c1);
+///////////////////////////////////////////////////////
    let newNavli2 = document.createElement("li");
    let attClass10 = document.createAttribute("class");
    attClass10.value = "nav-item";
