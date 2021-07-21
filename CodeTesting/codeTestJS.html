@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head id="include">
+     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<div class="wrapper">
+    <div class="row">
+        <div class="col border border-primary">
+            <h6 class="mt-2 px-3">Q1: Determine sum of whole numbers under 1000 by mulitplies of 5 or 3.</h6>
+            <button id="q1_btn_input" class="button btn btn-success text-black m-3" type="button"
+                onclick="SumOfWhole();">Get
+                Results</button>
+            <h6 id="q1" class="p-3 bg-success text-blue">Results will display here.</h6>
+            <div class="input-group align-center">
+                <label class="p-2 w-50">Limit---></label><input id="changeLimit" onkeyup="keyEnterq1()"
+                    onfocus="this.value=''" class="m-1" type="text" name="array[]" value="1000">
+                <label class="p-2 w-50">factor---></label><input id="changeFactor" onkeyup="keyEnterq1()"
+                    onfocus="this.value=''" class="m-1" type="text" name="array[]" value="5">
+                <h6 id="q1a" class="m-3 text-primary"></h6>
+            </div>
+        </div>
+        <div class="col border border-primary">
+            <button id="btn_script" class="btn btn-success m-3">View Script 1</button>
+            <div id="script" style="display: none;">
+                <img src="../img/q1BlockJS1.PNG" alt="q1 Code Block js 1">
+                <img src="../img/q1BlockJS2.PNG" alt="q1 Code Block js 2">
+            </div>
+        </div>
+
+        <div class="col border border-primary">
+            <h6 class="mt-2">Q2: Valid Parenthesis | Returns true or false</h6>
+            <input id="input_paren" type="text" name="arrayParen[]" onkeyup="keyEnterq2()" onfocus="this.value=''"
+                placeholder="Enter formula!">
+            <div>
+                <p id="q2"></p>
+            </div>
+            <button id="btn_test_paren" class="btn btn-success px-3" onclick="open_close_paren()">Test
+                Parenthesis</button>
+        </div>
+        <div class="col border border-primary">
+            <button id="btn_script_2" class="btn btn-success m-3">View Script 2</button>
+            <div code id="script_2" style="display: none;">
+                <img src="../img/q2BlockJS1.PNG" alt="q2 Code Block JS 1">
+                <img src="../img/q2BlockJS2.PNG" alt="q2 Code Block JS 2">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="q3" class="col border border-primary">
+            <h6 class="mt-2 px-3">
+                Q3: Calculate the Factorial of any non-integer (n!) | Recursive and Non-Recursive
+            </h6>
+
+            <button id="q3b_calc" class="btn btn-success m-3 w-50" onclick="calc()">Calc Non-Recursive
+                Factorial</button>
+            <input id="nFractorial" type="text" onfocus="this.value=''" name="array3[]" onclick="getData3"
+                onkeyup="keyEnterq3a()" value="" placeholder="Enter Positve Number">
+
+            <button type="button" id="q3c_calc" class="btn btn-success m-3 w-50"
+                onclick="recursion(n = getData3b().value, sum)">Calc Recursive
+                Fractorial</button>
+            <input id="nFractorial2" type="text" onfocus="this.value=''" name="array6[]" onkeyup="keyEnterq3b()"
+                value="" placeholder="Enter Positive Number">
+
+            <h6 id="q3a">
+                <!-- Event Listener -->
+            </h6>
+
+        </div>
+        <div class="col border border-primary">
+            <button id="btn_script_3" class="btn btn-success m-3">View Script 3</button>
+            <div id="script3" style="display: none;">
+
+                <div class="img-fluid">
+                    <img src="../img/q3BlockJS1.PNG" alt="Code Block q3 non-recursion function">
+                    <img src="../img/q3BlockJS2.PNG" alt="Code Block q3 recursion function">
+                </div>
+
+            </div>
+        </div>
+
+        <div id="q4" class="col border border-primary">
+            <h6 class="mt-2 px-3">Q4: Reverse String Without Helpers | by Whole String and by Whole Word</h6>
+            <h6 class="mt-2 px-3">Reverse by Whole String</h6>
+            <input id="reverseStr" type="text" onkeyup="keyEnterq4()" onfocus="this.value=''" name="array4[]"
+                placeholder="Enter a string here!">
+            <button id="btn_q4" class="btn btn-success m-3 px-3" onclick="reverseStr()">Reverse String</button>
+            <div>
+                <p id="q4a"></p>
+            </div>
+            <h6 class="mt-2 px-3">Reverse by Whole Word</h6>
+            <input id="reverseStr2" type="text" onfocus="this.value=''" name="array5[]"
+                placeholder="Enter a string here!">
+            <button id="btn_input4" onclick="getDataWholeWord()" class="btn btn-primary m-3 px-3">Reverse
+                String</button>
+            <div>
+                <p id="q4b"></p>
+            </div>
+        </div>
+        <div class="col border border-primary">
+            <button id="btn_script_4" class="btn btn-primary m-3">View Script 4</button>
+            <div id="script_4" style="display: none;">
+                <img src="" alt="q4 Code Block JS 1">
+                <img src="" alt="q4 Code Block JS 1">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="q5" class="col border border-primary">
+            <h6 class="text-center mt-2 px-3">Q5: Design Database to Normalize Data | JSON format Data</h6>
+            <h6 class="text-center" id="q5a">JSON Data | Normalize Tables</h6>
+            <div>
+                <p class="text-left ml-3" id="q5c"></p>
+            </div>
+            <div>
+                <p class="text-left ml-3" id="q5b"></p>
+            </div>
+        </div>
+        <div class="col border border-primary">
+            <button id="btn_script_5" class="btn btn-success m-3">View Script 5</button>
+            <div id="script_5" style="display: none;">
+                <img src="../img/q5BlockJS1.PNG" alt="q5 Code Block JS 1">
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col border border-primary">
+            <h6 class="text-center mt-2 px-3">Design Classes for an Object Orient GYM</h6>
+            <div id="q6a"></div>
+            <div id="q6b"></div>
+        </div>
+        <div class="col border border-primary">
+            <button id="btn_script_6" class="btn btn-primary m-3">View Script 6</button>
+            <div>
+                <img src="" alt="q6 Code Block JS 1">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="copyRight"></footer>
+<div id="script-bootstrap"></div>
+<script src="../nav-head-template.js"></script>
+<script src="Codetesting.js"></script>
+</div>
+<!-- container end -->
+
+</html>
