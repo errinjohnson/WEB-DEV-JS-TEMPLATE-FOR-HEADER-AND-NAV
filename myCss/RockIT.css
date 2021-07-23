@@ -1,0 +1,35 @@
+.btn-custom-color {
+    color: whitesmoke;
+    background-color: #c7007e;
+    border-color: #c7007e;
+}
+
+.event-name {
+    font-size: calc(.12vw + 1rem);
+}
+
+.venue-name,
+.city-state,
+.tickets {
+    font-size: calc(.12vw + 1rem);
+}
+
+.tickets {
+    color: #c7007e
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+nav {
+    background-image: linear-gradient(#E135A2, #89155F);
+}
+
+body {
+    background-image: linear-gradient(#E6AFFC, #D39EE9, #F5EEF8);
+    font-family: Georgia;
