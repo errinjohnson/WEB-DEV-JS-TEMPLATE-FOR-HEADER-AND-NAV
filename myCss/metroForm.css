@@ -1,0 +1,54 @@
+////////////////////GLOBAL ///////////////////////
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Sofia', serif;
+}
+
+body {
+    background-image: url(../img/carbon_fibre/carbon_fibre.png); 
+    font-family: 'Sofia', serif;
+}
+
+body,
+header {
+    border-radius: 10px;
+}
+
+.nav-tabs {
+    background-color: aliceblue;
+    opacity: .5;
+}
+
+.imageIndexPageTop {
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: .9;
+}
+
+section {
+    min-height: 500px;
+}
+
+footer {
+    min-height: 300px;
+}
+
+
+section,
+footer {
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 15px;
+    opacity: .8;
+}
+
+.lastModified {
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+

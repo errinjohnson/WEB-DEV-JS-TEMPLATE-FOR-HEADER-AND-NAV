@@ -550,7 +550,7 @@ function addScriptElements3(){
 
 }
 addScriptElements3();
-////end of addScriptElements3/////////////////////////////////////////////////////////end of script elements
+////end of addScriptElements3/////////////////////////////////////////////////////////end of script create elements
 
 function lastModified(){
 
@@ -586,3 +586,11 @@ function copyRight() {
 
 }
 copyRight();
+
+function hideEndOfStory(){
+  // let hideEndOfStoryID = document.getElementById("container_KZrImQ-oMh5");
+  // let hideEndOfStoryClass = document.getElementsByName("endOfStoryShareWrapper");
+  let hideEndOfStoryClass = document.getElementsByClassName("endOfStoryShareButton");
+  
+  
+}hideEndOfStory();
