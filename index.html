@@ -10,6 +10,14 @@
             padding: 16px;
         }
 
+        .centered {
+            position: absolute;
+            top: 40%;
+            left: 60%;
+            transform: translate(-60%, -40%);
+        }
+
+        body,
         aside,
         .steveJobs {
             background: rgb(14, 111, 242);
@@ -20,9 +28,6 @@
 
 <body>
     <div id="navBar1"></div>
-    <h4 class="text-center">Errin's Software Portfolio</h4>
-    <h5 class="text-center">Static Website with Bootstrap Classes</h5>
-    <h5 class="text-center">UnderConstruction!!</h5>
     <div id="last_modified" class="p-3 h6"></div>
     <div class="row">
         <aside class="col-2 rounded">
@@ -77,6 +82,7 @@
         </aside>
         <div class="col-7">
             <img src="img/sunset-1913108_1920.jpg" class="w-100 rounded">
+            <h3 class="centered">Connecting the dots...</h3>
         </div>
         <cite class="col-3 rounded steveJobs">
             You can't connect the dots looking forward; you can only connect them looking backwards. So you have
@@ -94,28 +100,43 @@
 
     <div class="container">
         <div class="row">
-            <div class="col border border-secondary"></div>
-            <div class="col-6">
-                <h3 class="text-center">Connecting the dots...</h3>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://sway.office.com/s/BVGvuWLt5BMWnO9x/embed"
-                        class="border border-secondary rounded" frameborder="0" width="100%" height="300px"
-                        sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-scripts allow-same-origin"
-                        scrolling="no" allowfullscreen mozallowfullscreen msallowfullscreen
-                        webkitallowfullscreen></iframe>
-                </div>
+            <div class="col border border-secondary">
+                <a href="https://errinjohnson.github.io/" target="_blank">
+                    <img src="img/kenny-linda-mae-karen-mary.jpg" alt="Jo Blanton House Computer Students"
+                        class="w-100">
+                </a>
+                <h5 class="text-center m-1">IoT class and Students</h>
+                    <h6 class="text-center m-1">Jo Blanton House</h6>
             </div>
-            <div class="col border border-secondary"></div>
+            <div class="col-6">
+                <img src="img/fullstack_development_stages.png" alt="image full stack js development"
+                    class="w-100 rounded">
+            </div>
+            <div class="col border border-secondary">
+                <a href="https://errinjohnson.github.io/" target="__blank">
+                    <img src="img/data4dem.jpg" alt="data for democracy 2017" class="w-100 rounded">
+                </a>
+                <h5 class="text-center m-1">Data 4 Democracy</h>
+                    <h6 class="text-center m-1">City of Louisville</h6>
+            </div>
         </div>
     </div>
-
     <!-- Row 1 End -->
     <!-- Row 2 start -->
-    <div class="container-lg mx-auto">
-        <div class="col-md p-3 m-3 ratio ratio-16x9">
-            <iframe src="https://coda.io/embed/lLggkb4wdn/_suH8W?viewMode=embedplay"
-                sandbox="allow-scripts allow-same-origin" width=900 height=400 style="max-width: 100%;"
-                allow="fullscreen"></iframe>
+    <div class="container">
+        <div class="row">
+            <div class="col-9" style="height: 400px;">
+                <iframe src="https://coda.io/embed/lLggkb4wdn/_suH8W?viewMode=embedplay" class="w-100 h-100"
+                    allow="fullscreen allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <div class="col border border-secondary w-100">
+                <a href="https://errinjohnson.github.io/" target="__blank">
+                    <img src="img/tiny-errinDerbyHacks.jpg" alt="Derby Hack 2017"  class="w-100 rounded">
+                </a>
+                <h5 class="text-center m-1">Derby Hack-A-Thon | UofL</h>
+                <h6 class="text-center m-1">City of Louisville</h6>
+            </div>
         </div>
     </div>
     <!-- Row 2 End -->
