@@ -9,17 +9,23 @@
             display: table-cell;
             padding: 16px;
         }
+
+        aside, .steveJobs {
+            background: rgb(14, 111, 242);
+            background: linear-gradient(180deg, rgba(14, 111, 242, 1) 0%, rgba(121, 43, 9, 0.5522584033613445) 35%, rgba(14, 111, 242, 0.3701855742296919) 100%);
+        }
     </style>
 </head>
 
-<body>
-    <div id="navBar1"></div>
+<body style="font-family:'Crimson Text'>
+    <div id=" navBar1">
+    </div>
     <h4 class="text-center">Errin's Software Portfolio</h4>
     <h5 class="text-center">Static Website with Bootstrap Classes</h5>
     <h5 class="text-center">UnderConstruction!!</h5>
     <div id="last_modified" class="p-3 h6"></div>
     <div class="row">
-        <aside class="col-2" style="background-color: #B9D9EB;">
+        <aside class="col-2 rounded"">
             <div>
                 <div class="m-3 card" style="width: 18rem;">
                     <a href="https://errinjohnson.github.io/software-dev-portfolio/" target="_blank">
@@ -29,8 +35,9 @@
             </div>
             <div>
                 <!-- Button trigger modal -->
-                <button type="button" style="width: 18rem;" class="m-3 btn btn-info border border-secondary rounded"
-                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" style="width: 18rem;"
+                    class="m-3 btn btn-primary active border border-primary rounded text-dark" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
                     Submit User Experience Feedback
                 </button>
 
@@ -58,18 +65,20 @@
                         </div>
                     </div>
                 </div>
-                <div><a class="btn btn-info m-3" style="width: 18rem;"
+                <div><a class="btn btn-primary active m-3 text-dark" style="width: 18rem;"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfruuK97-vuuG0UgjgD07cixP9PlqB35a7GS5usncifFFN2zg/viewanalytics"
                         role="button" target="_blank">Previous Users' Feedback</a>
                 </div>
             </div>
-            <div><a class="btn btn-info m-3" style="width: 18rem;"
+            <div><a class="btn btn-primary active m-3 text-dark" style="width: 18rem;"
                     href="./Errin E. Johnson Software Developer Resume-1page.pdf" download role="button"
                     target="_blank">Download Resume</a>
             </div>
         </aside>
-        <div class="col-7"></div>
-        <cite class="col-3" style="background-color: #B9D9EB;">
+        <div class="col-7">
+            <img src="img/sunset-1913108_1920.jpg" class="w-100 rounded">
+        </div>
+        <cite class="col-3 rounded steveJobs">
             You can't connect the dots looking forward; you can only connect them looking backwards. So you have
             to trust that the dots will somehow connect in your future.
             You have to trust in something —your gut, destiny, life, karma, whatever. This approach has never
@@ -77,7 +86,8 @@
             -- Steve Jobs
             <a href="https://getpocket.com/explore/item/steve-jobs-said-1-thing-separates-successful-people-from-everyone-else-and-will-make-all-the?utm_source=pocket-newtab"
                 target="_blank">
-                <img border="0" alt="Steve Jobs Article  " src="img/steveJobs.PNG" width="200" height="200">
+                <img border="0" class="rounded" alt="Steve Jobs Article  " src="img/steveJobs.PNG" width="200"
+                    height="200">
             </a>
         </cite>
     </div>
@@ -88,8 +98,8 @@
             <div class="col-6">
                 <h3 class="text-center">Connecting the dots...</h3>
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://sway.office.com/s/BVGvuWLt5BMWnO9x/embed" class="border border-secondary"
-                        frameborder="0" width="100%" height="300px"
+                    <iframe src="https://sway.office.com/s/BVGvuWLt5BMWnO9x/embed"
+                        class="border border-secondary rounded" frameborder="0" width="100%" height="300px"
                         sandbox="allow-forms allow-modals allow-orientation-lock allow-popups allow-scripts allow-same-origin"
                         scrolling="no" allowfullscreen mozallowfullscreen msallowfullscreen
                         webkitallowfullscreen></iframe>
