@@ -1,31 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head id="include">
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="#">
+    <!-- <link href="myCss/myCss.css" rel="stylesheet" > -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <style>
-        .col-md {
-            display: table-cell;
-            padding: 16px;
-        }
-
+        /* fix postion for text in sunset image */
         .centered {
             position: absolute;
             top: 30%;
             left: 50%;
             transform: translate(-30%, -50%);
         }
-
-
-        .container-lg,
-        .container-sm,
-        .steveJobs {
-            background: rgb(14, 111, 242);
-            background: linear-gradient(220deg, rgba(14, 111, 242, 1) 0%, rgba(121, 43, 9, 0.5522584033613445) 35%, rgba(14, 111, 242, 0.3701855742296919) 100%);
-        }
     </style>
-</head>
+</head> 
 
 <body>
     <!-- Container 1  -->
@@ -57,7 +47,7 @@
                     <button type="button" style="width: 12.5rem;"
                         class="m-3 btn btn-primary active border border-primary rounded text-dark"
                         data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Submit User Experience Feedback
+                        Give user experience Feedback
                     </button>
 
                     <!-- Modal -->
@@ -88,14 +78,21 @@
                 </div>
                 <div><a class="btn btn-primary active m-3 text-dark" style="width: 12.5rem;"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfruuK97-vuuG0UgjgD07cixP9PlqB35a7GS5usncifFFN2zg/viewanalytics"
-                        role="button" target="_blank">Previous Users' Feedback</a>
+                        role="button" target="_blank">Previous users feedback</a>
                 </div>
                 <div><a class="btn btn-primary active m-3 text-dark" style="width: 12.5rem;"
                         href="./Errin E. Johnson Software Developer Resume-1page.pdf" download role="button"
-                        target="_blank">Download Resume</a>
+                        target="_blank">Download resume</a>
                 </div>
             </div>
-            <cite class="col-md mb-3 rounded steveJobs">
+            <cite class="col-md-3 mb-3 rounded steveJobs">
+                <blockquote>
+                    You can't connect the dots looking forward; you can only connect them looking backwards. So you have
+                    to trust that the dots will somehow connect in your future.
+                    You have to trust in something —your gut, destiny, life, karma, whatever. This approach has never
+                    let me down, and it has made all the difference in my life.
+                    -- Steve Jobs
+                </blockquote>
                 <a href="https://getpocket.com/explore/item/steve-jobs-said-1-thing-separates-successful-people-from-everyone-else-and-will-make-all-the?utm_source=pocket-newtab"
                     target="_blank">
                     <figure class="figure mt-3">
@@ -105,14 +102,10 @@
                         </figcaption>
                     </figure>
                 </a>
-                You can't connect the dots looking forward; you can only connect them looking backwards. So you have
-                to trust that the dots will somehow connect in your future.
-                You have to trust in something —your gut, destiny, life, karma, whatever. This approach has never
-                let me down, and it has made all the difference in my life.
-                -- Steve Jobs
             </cite>
         </div>
     </div>
+
     <!-- Container 2  -->
     <div class="container-lg">
         <div class="row">
@@ -185,7 +178,6 @@
     </div>
     <footer id="copyRight" class="p-3"></footer>
     <div id="script-bootstrap"></div>
-
     <script src="nav-head-template.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
     <!-- container end -->

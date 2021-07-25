@@ -1,1 +1,13 @@
-body { font-family: 'Crimson Text', serif !important;}
+
+body{
+    background: rgb(14, 111, 242);
+    background: linear-gradient(220deg, rgba(14, 111, 242, 1) 0%, rgba(121, 43, 9, 0.5522584033613445) 35%, rgba(14, 111, 242, 0.3701855742296919) 100%);
+    font-family: "Montserrat", "Pathway Gothic One", sans-serif !important;
+    font-weight: 300;
+}
+
+.col-md {
+    /* font-family: 'Pathway Gothic One', sans-serif !important; */
+    display: table-cell;
+    padding: 16px;
+}
