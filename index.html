@@ -5,16 +5,16 @@
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="#">
     <style>
-        .col {
+        .col-md {
             display: table-cell;
             padding: 16px;
         }
 
         .centered {
             position: absolute;
-            top: 40%;
-            left: 60%;
-            transform: translate(-60%, -40%);
+            top: 30%;
+            left: 50%;
+            transform: translate(-30%, -50%);
         }
 
         body,
@@ -27,93 +27,98 @@
 </head>
 
 <body>
-    <div id="navBar1"></div>
-    <div id="last_modified" class="p-3 h6"></div>
-    <div class="row">
-        <aside class="col-2 rounded">
-            <div>
-                <div class="m-3 card" style="width: 18rem;">
-                    <a href="https://errinjohnson.github.io/software-dev-portfolio/" target="_blank">
-                        <img border="0" src="img/Github-img.PNG" class="card-img" alt="Github Icon">
-                    </a>
-                </div>
+    <div class="container-lg">
+        <div id="navBar1"></div>
+        <div id="last_modified" class="p-3 h6"></div>
+        <div class="row">
+            <div class="col-md">
+                <img src="img/sunset-1913108_1920.jpg" class="img-fluid rounded">
+                <h3 class="centered text-sm text-light">Connecting the dots...</h3>
             </div>
-            <div>
-                <!-- Button trigger modal -->
-                <button type="button" style="width: 18rem;"
-                    class="m-3 btn btn-primary active border border-primary rounded text-dark" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Submit User Experience Feedback
-                </button>
+        </div>
+        <div class="row">
+            <div class="col-md rounded">
+                <div>
+                    <div class="m-3" style="min-width: 10rem;">
+                        <a href="https://errinjohnson.github.io/software-dev-portfolio/" target="_blank">
+                            <img border="0" src="img/Github-img.PNG" class="img-fluid rounded" alt="Github Icon">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <!-- Button trigger modal -->
+                    <button type="button" style="width: 10rem;"
+                        class="m-3 btn btn-primary active border border-primary rounded text-dark"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Submit User Experience Feedback
+                    </button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Feedback | Survey</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <iframe
-                                    src="https://docs.google.com/forms/d/e/1FAIpQLSfruuK97-vuuG0UgjgD07cixP9PlqB35a7GS5usncifFFN2zg/viewform?embedded=true"
-                                    class="w-100 h-100" sandbox="allow-scripts allow-same-origin"
-                                    style="min-height:500px" frameborder="0" marginheight="0"
-                                    marginwidth="0">Loading…</iframe>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>
-                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Feedback | Survey</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <iframe
+                                        src="https://docs.google.com/forms/d/e/1FAIpQLSfruuK97-vuuG0UgjgD07cixP9PlqB35a7GS5usncifFFN2zg/viewform?embedded=true"
+                                        class="w-100 h-100" sandbox="allow-scripts allow-same-origin"
+                                        style="min-height:500px" frameborder="0" marginheight="0"
+                                        marginwidth="0">Loading…</iframe>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">CLOSE</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div><a class="btn btn-primary active m-3 text-dark" style="width: 10rem;"
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfruuK97-vuuG0UgjgD07cixP9PlqB35a7GS5usncifFFN2zg/viewanalytics"
+                            role="button" target="_blank">Previous Users' Feedback</a>
+                    </div>
                 </div>
-                <div><a class="btn btn-primary active m-3 text-dark" style="width: 18rem;"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfruuK97-vuuG0UgjgD07cixP9PlqB35a7GS5usncifFFN2zg/viewanalytics"
-                        role="button" target="_blank">Previous Users' Feedback</a>
+                <div><a class="btn btn-primary active m-3 text-dark" style="width: 10rem;"
+                        href="./Errin E. Johnson Software Developer Resume-1page.pdf" download role="button"
+                        target="_blank">Download Resume</a>
                 </div>
             </div>
-            <div><a class="btn btn-primary active m-3 text-dark" style="width: 18rem;"
-                    href="./Errin E. Johnson Software Developer Resume-1page.pdf" download role="button"
-                    target="_blank">Download Resume</a>
-            </div>
-        </aside>
-        <div class="col-7">
-            <img src="img/sunset-1913108_1920.jpg" class="w-100 rounded">
-            <h3 class="centered">Connecting the dots...</h3>
+            
+            <cite class="col-md p-3 rounded steveJobs">
+                You can't connect the dots looking forward; you can only connect them looking backwards. So you have
+                to trust that the dots will somehow connect in your future.
+                You have to trust in something —your gut, destiny, life, karma, whatever. This approach has never
+                let me down, and it has made all the difference in my life.
+                -- Steve Jobs
+                <a href="https://getpocket.com/explore/item/steve-jobs-said-1-thing-separates-successful-people-from-everyone-else-and-will-make-all-the?utm_source=pocket-newtab"
+                    target="_blank">
+                    <img border="0" class="img-fluid rounded m-3" alt="Steve Jobs Article  " src="img/steveJobs.PNG" width="200" height="200">
+                </a>
+            </cite>
         </div>
-        <cite class="col-3 rounded steveJobs">
-            You can't connect the dots looking forward; you can only connect them looking backwards. So you have
-            to trust that the dots will somehow connect in your future.
-            You have to trust in something —your gut, destiny, life, karma, whatever. This approach has never
-            let me down, and it has made all the difference in my life.
-            -- Steve Jobs
-            <a href="https://getpocket.com/explore/item/steve-jobs-said-1-thing-separates-successful-people-from-everyone-else-and-will-make-all-the?utm_source=pocket-newtab"
-                target="_blank">
-                <img border="0" class="rounded" alt="Steve Jobs Article  " src="img/steveJobs.PNG" width="200"
-                    height="200">
-            </a>
-        </cite>
     </div>
-    <div class="container">
+    <div class="container-lg">
         <div class="row">
-            <div class="col">
+            <div class="col-md mb-3">
                 <a href="https://errinjohnson.github.io/" target="_blank">
                     <img src="img/kenny-linda-mae-karen-mary.jpg" alt="Jo Blanton House Computer Students"
-                        class="rounded w-100">
+                        class="img-fluid rounded">
                 </a>
                 <h5 class="text-center m-1">IoT class and students</h>
                     <h6 class="text-center m-1">Jo Blanton House</h6>
             </div>
-            <div class="col-6 mt-3">
+            <div class="col-md mb-3">
                 <img src="img/fullstack_development_stages.png" alt="image full stack js development"
-                    class="w-100 rounded">
+                    class="img-fluid rounded">
             </div>
-            <div class="col">
+            <div class="col-md mb-3">
                 <a href="https://errinjohnson.github.io/" target="__blank">
-                    <img src="img/data4dem.jpg" alt="data for democracy 2017" class="w-100 rounded">
+                    <img src="img/data4dem.jpg" alt="data for democracy 2017" class="img-fluid rounded">
                 </a>
                 <h5 class="text-center m-1">Data 4 Democracy</h>
                     <h6 class="text-center m-1">City of Louisville</h6>
@@ -124,30 +129,29 @@
     <!-- Row 2 start -->
     <div class="container">
         <div class="row">
-            <div class="col w-100" style="height: 400px;">
+            <div class="col-md mb-3">
                 <a href="https://rockitwomen.com/team" target="__blank">
-                    <img src="img/RockITMembersMarvelousSix-blurBackground.png" style="height: 200px;"
-                        alt="Derby Hack 2017" class="w-100 rounded">
+                    <img src="img/RockITMembersMarvelousSix-blurBackground.png" alt="Derby Hack 2017" class="img-fluid rounded">
                 </a>
                 <h5 class="text-center m-1">RockIT Women</h5>
                 <h6 class="text-center m-1">Marvelous Six</h6>
                 <!-- <div>
-                    <a href="https://www.linkedin.com/company/rockitwomen/" target="__blank">
-                        <img src="img/DaveMattinglyRWKudos.PNG" style="height: 200px;" alt="Women In Technology | 2021 "
-                            class="w-100 rounded">
-                    </a>
-                    <h5 class="text-center m-1">Women In Technology Conference 2021</h5>
-                    <h6 class="text-center m-1"></h6>
-                </div> -->
+                        <a href="https://www.linkedin.com/company/rockitwomen/" target="__blank">
+                            <img src="img/DaveMattinglyRWKudos.PNG" style="height: 200px;" alt="Women In Technology | 2021 "
+                                class="img-fluid rounded">
+                        </a>
+                        <h5 class="text-center m-1">Women In Technology Conference 2021</h5>
+                        <h6 class="text-center m-1"></h6>
+                    </div> -->
             </div>
-            <div class="col-5 mt-3" style="height: 400px;">
+            <!-- <div class="col-md md-5 mt-3">
                 <iframe src="https://coda.io/embed/lLggkb4wdn/_suH8W?viewMode=embedplay" class="rounded w-100 h-100"
                     allow="fullscreen allow-scripts allow-same-origin">
                 </iframe>
-            </div>
-            <div class="col w-100">
+            </div> -->
+            <div class="col-md mb-3">
                 <a href="https://errinjohnson.github.io/" target="__blank">
-                    <img src="img/tiny-errinDerbyHacks.jpg" alt="Derby Hack 2017" class="w-100 rounded">
+                    <img src="img/tiny-errinDerbyHacks.jpg" alt="Derby Hack 2017" class="img-fluid rounded">
                 </a>
                 <h5 class="text-center m-1">Derby Hack-A-Thon | UofL</h5>
                 <h6 class="text-center m-1">City of Louisville</h6>
@@ -161,8 +165,8 @@
 
     <script src="nav-head-template.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
-    </div>
     <!-- container end -->
+    </div>
 </body>
 
 </html>
