@@ -157,9 +157,6 @@ addHeadElements();
 function addNavElements2() {
 
   let include2 = document.getElementById("navBar1");
-  //  let attClass1 = document.createAttribute("class");
-  //  attClass1.value = "sticky-top";
-  //  include2.appendChild(attClass1);
   //
   let newNav1 = document.createElement("nav");
   let attClass = document.createAttribute("class");
