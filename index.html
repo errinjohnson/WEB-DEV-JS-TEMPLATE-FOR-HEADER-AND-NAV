@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="#">
     <style>
+        /* fix postion for text in sunset image */
         .centered {
             position: absolute;
             top: 30%;
@@ -12,14 +13,14 @@
             transform: translate(-30%, -50%);
         }
 
-        .container-lg,
-        .container-sm,
-        .steveJobs {
+        body {
             background: rgb(14, 111, 242);
             background: linear-gradient(220deg, rgba(14, 111, 242, 1) 0%, rgba(121, 43, 9, 0.5522584033613445) 35%, rgba(14, 111, 242, 0.3701855742296919) 100%);
-        }
+            font-family: "Montserrat", "Pathway Gothic One", sans-serif !important;
+            font-weight: 300;
+        } 
     </style>
-</head>
+</head> 
 
 <body>
     <!-- Container 1  -->
@@ -31,7 +32,8 @@
                 <figure class="figure">
                     <img src="img/sunset-1913108_1920.jpg" class="figure-img img-fluid rounded"
                         alt="response image | sunset over the ocean sky">
-                    <figcaption class="figure-caption font-weight-bold text-center text-dark">Sunset over the ocean sky!</figcaption>
+                    <figcaption class="figure-caption font-weight-bold text-center text-dark">Sunset over the ocean sky!
+                    </figcaption>
                 </figure>
                 <h3 class="centered text-sm text-light">Connecting the dots...</h3>
             </div>
@@ -50,7 +52,7 @@
                     <button type="button" style="width: 12.5rem;"
                         class="m-3 btn btn-primary active border border-primary rounded text-dark"
                         data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Feedback for user experience
+                        Give user experience Feedback
                     </button>
 
                     <!-- Modal -->
@@ -97,7 +99,7 @@
                     -- Steve Jobs
                 </blockquote>
                 <a href="https://getpocket.com/explore/item/steve-jobs-said-1-thing-separates-successful-people-from-everyone-else-and-will-make-all-the?utm_source=pocket-newtab"
-                target="_blank">
+                    target="_blank">
                     <figure class="figure mt-3">
                         <img src="img/steveJobs.PNG" class="figure-img img-fluid rounded"
                             alt="response image | Steve Jobs Article" style="width: 200px; height: 200px;">
@@ -181,7 +183,6 @@
     </div>
     <footer id="copyRight" class="p-3"></footer>
     <div id="script-bootstrap"></div>
-
     <script src="nav-head-template.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
     <!-- container end -->
