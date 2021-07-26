@@ -4,7 +4,7 @@
 <head id="include">
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="#">
-    <!-- <link href="myCss/myCss.css" rel="stylesheet" > -->
+    <link href="myCss/myCss.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <style>
         /* fix postion for text in sunset image */
@@ -15,7 +15,7 @@
             transform: translate(-30%, -50%);
         }
     </style>
-</head> 
+</head>
 
 <body>
     <!-- Container 1  -->
@@ -23,7 +23,7 @@
         <div id="navBar1"></div>
         <div id="last_modified" class="p-3 h6"></div>
         <div class="row">
-            <div class="col-md">
+            <div id="sunset" class="col-md">
                 <figure class="figure">
                     <img src="img/sunset-1913108_1920.jpg" class="figure-img img-fluid rounded"
                         alt="response image | sunset over the ocean sky">
@@ -32,11 +32,29 @@
                 </figure>
                 <h3 class="centered text-sm text-light">Connecting the dots...</h3>
             </div>
+            <cite class="col-md-3 p-3 rounded steveJobs">
+
+                You can't connect the dots looking forward; you can only connect them looking backwards. So you have
+                to trust that the dots will somehow connect in your future.
+                You have to trust in something —your gut, destiny, life, karma, whatever. This approach has never
+                let me down, and it has made all the difference in my life.
+                -- Steve Jobs
+
+                <a href="https://getpocket.com/explore/item/steve-jobs-said-1-thing-separates-successful-people-from-everyone-else-and-will-make-all-the?utm_source=pocket-newtab"
+                    target="_blank">
+                    <figure class="figure mt-3">
+                        <img src="img/steveJobs.PNG" class="figure-img img-fluid rounded"
+                            alt="response image | Steve Jobs Article" style="width: 200px; height: 200px;">
+                        <figcaption class="figure-caption font-weight-bold text-center text-dark">Article
+                        </figcaption>
+                    </figure>
+                </a>
+            </cite>
         </div>
-        <div class="row">
-            <div class="col-md rounded">
+        <div class="row rounded">
+            <div class="col-md-4 p-3 text-center rounded">
                 <div>
-                    <div class="m-3" style="min-width: 12.5rem;">
+                    <div class="mb-3" style="min-width: 12.5rem;">
                         <a href="https://errinjohnson.github.io/software-dev-portfolio/" target="_blank">
                             <img border="0" src="img/Github-img.PNG" class="img-fluid rounded" alt="Github Icon">
                         </a>
@@ -44,8 +62,7 @@
                 </div>
                 <div>
                     <!-- Button trigger modal -->
-                    <button type="button" style="width: 12.5rem;"
-                        class="m-3 btn btn-primary active border border-primary rounded text-dark"
+                    <button type="button" style="width: 12.5rem;" class="mb-3 btn btn-primary active rounded text-dark"
                         data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Give user experience Feedback
                     </button>
@@ -76,106 +93,103 @@
                         </div>
                     </div>
                 </div>
-                <div><a class="btn btn-primary active m-3 text-dark" style="width: 12.5rem;"
+                <div><a class="mb-3 btn btn-primary active text-dark" style="width: 12.5rem;"
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfruuK97-vuuG0UgjgD07cixP9PlqB35a7GS5usncifFFN2zg/viewanalytics"
                         role="button" target="_blank">Previous users feedback</a>
                 </div>
-                <div><a class="btn btn-primary active m-3 text-dark" style="width: 12.5rem;"
+                <div><a class="btn btn-primary active text-dark" style="width: 12.5rem;"
                         href="./Errin E. Johnson Software Developer Resume-1page.pdf" download role="button"
                         target="_blank">Download resume</a>
                 </div>
             </div>
-            <cite class="col-md-3 mb-3 rounded steveJobs">
-                <blockquote>
-                    You can't connect the dots looking forward; you can only connect them looking backwards. So you have
-                    to trust that the dots will somehow connect in your future.
-                    You have to trust in something —your gut, destiny, life, karma, whatever. This approach has never
-                    let me down, and it has made all the difference in my life.
-                    -- Steve Jobs
-                </blockquote>
-                <a href="https://getpocket.com/explore/item/steve-jobs-said-1-thing-separates-successful-people-from-everyone-else-and-will-make-all-the?utm_source=pocket-newtab"
-                    target="_blank">
-                    <figure class="figure mt-3">
-                        <img src="img/steveJobs.PNG" class="figure-img img-fluid rounded"
-                            alt="response image | Steve Jobs Article" style="width: 200px; height: 200px;">
-                        <figcaption class="figure-caption font-weight-bold text-center text-dark">Steve Jobs Article
-                        </figcaption>
-                    </figure>
-                </a>
-            </cite>
-        </div>
-    </div>
-
-    <!-- Container 2  -->
-    <div class="container-lg">
-        <div class="row">
-            <div class="col-md mb-3">
-                <a href="https://errinjohnson.github.io/" target="_blank">
-                    <figure class="figure mt-3">
-                        <img src="img/kenny-linda-mae-karen-mary.jpg" class="figure-img img-fluid rounded"
-                            alt="response image | Jo Blanton House Residents | IoT Class of 2019">
-                        <figcaption class=" figure-caption font-weight-bold text-center text-dark">Jo Blanton House |
-                            IoT Class of 2019</figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="col-md mb-3">
+            <div id="fullStackDev" class="col-md-8 p-3 rounded">
                 <img src="img/fullstack_development_stages.png" alt="image full stack js development"
                     class="img-fluid rounded">
             </div>
-            <div class="col-md mb-3">
-                <a href="https://errinjohnson.github.io/" target="_blank">
-                    <figure class="figure mt-3">
-                        <img src="img/data4dem.jpg" class="figure-img img-fluid rounded"
-                            alt="response image | Data 4 Democracy Hack-A-Thon">
-                        <figcaption class="figure-caption font-weight-bold text-center text-dark">Data 4 Democracy 2017
-                            | City of Lousiville</figcaption>
-                    </figure>
-                </a>
-            </div>
         </div>
     </div>
+
+    <!-- Container 2 -->
+    <!-- <div class="container-lg">
+        <div class="row">
+            <div class="col-md mb-3"></div>
+            <div class="col-md mb-3"></div>
+            <div class="col-md mb-3"></div>
+            </div>
+        </div> -->
 
     <!-- Container 3 -->
     <div class="container-lg">
         <div class="row">
-            <div class="col-md mb-3">
-                <a href="https://rockitwomen.com/team" target="_blank">
-                    <figure class="figure mt-3">
-                        <img src="img/RockITMembersMarvelousSix-blurBackground.png" class="figure-img img-fluid rounded"
-                            alt="response image | RockIT Members Meeting">
-                        <figcaption class="figure-caption font-weight-bold text-center text-dark">RockIt Womem 2021 |
-                            Marvelous Six</figcaption>
-                    </figure>
-                </a>
-                <!-- <div>
-                            <a href="https://www.linkedin.com/company/rockitwomen/" target="__blank">
-                                <img src="img/DaveMattinglyRWKudos.PNG" style="height: 200px;" alt="Women In Technology | 2021 "
-                                    class="img-fluid rounded">
-                            </a>
-                            <h5 class="text-center m-1">Women In Technology Conference 2021</h5>
-                            <h6 class="text-center m-1"></h6>
-                        </div> -->
-            </div>
             <!-- <div class="col-md md-5 mt-3">
                     <iframe src="https://coda.io/embed/lLggkb4wdn/_suH8W?viewMode=embedplay" class="rounded w-100 h-100"
                         allow="fullscreen allow-scripts allow-same-origin">
                     </iframe>
                 </div> -->
             <div class="col-md mb-3">
-                <div class="col-md mb-3">
-                    <a href="https://errinjohnson.github.io/" target="_blank">
-                        <figure class="figure mt-3">
-                            <img src="img/tiny-errinDerbyHacks.jpg" class=" figure-img img-fluid rounded"
-                                alt="response image | UofL Derby Hack-A-Thon 2017">
-                            <figcaption class="figure-caption font-weight-bold text-center text-dark">UofL Derby
-                                Hack-A-Thon 2017 | City of Louisville</figcaption>
-                        </figure>
-                    </a>
+                <div id="carouselWithCaptionsIndicators_A" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators p-3">
+                        <button type="button" data-bs-target="#carouselWithCaptionsIndicators_A" data-bs-slide-to="0"
+                            class="active p-1" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselWithCaptionsIndicators_A" data-bs-slide-to="1"
+                            class="p-1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselWithCaptionsIndicators_A" data-bs-slide-to="2"
+                            class="p-1" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselWithCaptionsIndicators_A" data-bs-slide-to="3"
+                           class="p-1" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <figure class="figure">
+                                <img src="img/tiny-errinDerbyHacks.jpg" class="d-block w-100 rounded"
+                                    alt="response image | UofL Derby Hack-A-Thon 2017">
+                                <figcaption class="figure-caption font-weight-bold text-center text-dark">UofL Derby
+                                    Hack-A-Thon 2017 | City of Louisville</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="img/data4dem.jpg" class="d-block w-100 rounded"
+                                    alt="response image | Data 4 Democracy Hack-A-Thon">
+                                <figcaption class="figure-caption font-weight-bold text-center text-dark">Data 4
+                                    Democracy 2017 | City of Lousiville</figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure">
+                                <img src="img/RockITMembersMarvelousSix-blurBackground.png"
+                                    class="d-block w-100 rounded" alt="response image | RockIT Members Meeting">
+                                <figcaption class="figure-caption font-weight-bold text-center text-dark"><a
+                                        href="https://rockitwomen.com/team" target="_blank">RockIt Womem 2021 |
+                                        Marvelous Six</a></figcaption>
+                            </figure>
+                        </div>
+                        <div class="carousel-item">
+                            <figure class="figure mt-3">
+                                <img src="img/kenny-linda-mae-karen-mary.jpg" class="figure-img img-fluid rounded"
+                                    alt="response image | Jo Blanton House Residents | IoT Class of 2019">
+                                <figcaption class=" figure-caption font-weight-bold text-center text-dark">Jo
+                                    Blanton
+                                    House |
+                                    IoT Class of 2019</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselWithCaptionsIndicators_A" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselWithCaptionsIndicators_A" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+
     <footer id="copyRight" class="p-3"></footer>
     <div id="script-bootstrap"></div>
     <script src="nav-head-template.js"></script>
