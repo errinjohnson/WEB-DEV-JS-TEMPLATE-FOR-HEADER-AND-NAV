@@ -598,7 +598,6 @@ function copyRight() {
   attCenter.value = "text-center";
   elPara.setAttributeNode(attCenter);
   let t111 = document.createTextNode("Website Copyright 2015-2021 Errin E Johnson, All Rights Reserved.");
-
   elPara.appendChild(t111);
   copyR.appendChild(elPara);
 
