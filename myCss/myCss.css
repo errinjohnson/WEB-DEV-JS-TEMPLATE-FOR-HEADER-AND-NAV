@@ -11,27 +11,35 @@ body {
     padding: 16px;
 }
 
-/* fix postion for text in sunset image
-.centered {
+/* .directory {
+    max-width: 10em;
+} */
+/* fix postion for text in sunset image  */
+/* .centered {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translate(-30%, -50%);
+    transform: translate(-50%, -50%);
 } */
 
-@media (min-width: 768px) and  (max-width: 1115px) {
-    #sunset, .steveJobs {
+@media (min-width: 768px) and (max-width: 1115px) {
+
+    #sunset,
+    .steveJobs {
         flex: 0 0 auto;
         min-width: 100%;
     }
+
     .steveJobs {
         color: orange;
     }
-    
-} 
-@media (min-width: 350px) and (max-width: 820px){
 
-    .col, .q5 {
+}
+
+@media (min-width: 350px) and (max-width: 820px) {
+
+    .col,
+    .q5 {
         flex: 0 0 auto;
         min-width: 100%;
     }
