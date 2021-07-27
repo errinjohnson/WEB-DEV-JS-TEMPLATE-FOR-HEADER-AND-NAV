@@ -4,24 +4,40 @@
 <head id="include">
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="#">
-    <link href="myCss/myCss.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <style>
-        /* fix postion for text in sunset image */
         .centered {
             position: absolute;
-            top: 30%;
+            top: 50%;
             left: 50%;
-            transform: translate(-30%, -50%);
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 
 <body>
+    <div class="container-sm m-1 p-3">
+        <div class="directory row w-25">
+            <div id="labelInput" class="col-md"></div>
+            <div id="msg1"></div>
+            <button class="col-md btn btn-primary m-2" style="min-width: 12.5rem;" onclick="labelInput();" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart" aria-controls="offcanvasStart">aM Directory
+            </button>
+        </div>
+        <div class="directory row w-25">
+            <div id="labelInput2" class="col-md"></div>
+            <div id="msg2"></div>
+            <button class="col-md btn btn-primary m-2" style="min-width: 12.5rem;" onclick="labelInput2()" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasStart2" aria-controls="offcanvasStart">aM Shared
+                Resources</button>
+        </div>
+    </div>
+
     <!-- Container 1  -->
     <div class="container-sm">
         <div id="navBar1"></div>
         <div id="last_modified" class="p-3 h6"></div>
+        <div></div>
         <div class="row">
             <div id="sunset" class="col-md">
                 <figure class="figure">
@@ -136,7 +152,7 @@
                         <button type="button" data-bs-target="#carouselWithCaptionsIndicators_A" data-bs-slide-to="2"
                             class="p-1" aria-label="Slide 3"></button>
                         <button type="button" data-bs-target="#carouselWithCaptionsIndicators_A" data-bs-slide-to="3"
-                           class="p-1" aria-label="Slide 4"></button>
+                            class="p-1" aria-label="Slide 4"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -190,6 +206,111 @@
         </div>
     </div>
 
+    <!-- PURPOSE OF THE OFFCAN AS IS A PROTO-TYPE FOR A Directory AND SHARED Resources -->
+    <!-- start of off canvas 1 -->
+
+    <div class="offcanvas offcanvas-start d-none" tabindex="-1" id="offcanvasStart"
+        aria-labelledby="offcanvasStartLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasStartLabel">Companies | Business</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                About and Purpose
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown">
+                    Genius Loves Company
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas 1 dir</a></li>
+                    <li style="background-color:lightcoral;"><a class="dropdown-item" href="#">offcanvas 1 dir</a></li>
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas 1 dir</a></li>
+                </ul>
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown">
+                    RockIT Women
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas 2 dir</a></li>
+                    <li style="background-color: lightcoral;"><a class="dropdown-item" href="#">offcanvas 2 dir</a></li>
+                    <!-- <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas 2 dir</a></li> -->
+                </ul>
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton3"
+                    data-bs-toggle="dropdown">
+                    KCTCS
+                </button>
+                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton3">
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas 3 dir</a></li>
+                    <li style="background-color: lightcoral;"><a class="dropdown-item" href="#">offcanvas 3 dir</a></li>
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas 3 dir</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- start off offcanvas 2 -->
+
+    <div class="offcanvas offcanvas-start d-none" tabindex="-1" id="offcanvasStart2"
+        aria-labelledby="offcanvasStartLabel2">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasStartLabel2">Companies | Business</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                About and Purpose
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton1_b"
+                    data-bs-toggle="dropdown">
+                    Genius Loves Company
+                </button>
+                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1_b">
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas resource1</a>
+                    </li>
+                    <li style="background-color: lightcoral;"><a class="dropdown-item" href="#">offcanvas resource2</a>
+                    </li>
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas resource3</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton2_b"
+                    data-bs-toggle="dropdown">
+                    RockIT Women
+                </button>
+                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton2_b">
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas resource1</a>
+                    </li>
+                    <li style="background-color: lightcoral;"><a class="dropdown-item" href="#">offcanvas resource2</a>
+                    </li>
+                    <!-- <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas resource3</a></li> -->
+                </ul>
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="dropdownMenuButton3_b"
+                    data-bs-toggle="dropdown">
+                    KCTCS
+                </button>
+                <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton3_b">
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas resource1</a>
+                    </li>
+                    <li style="background-color: lightcoral;"><a class="dropdown-item" href="#">offcanvas resource2</a>
+                    </li>
+                    <li style="background-color: lightblue;"><a class="dropdown-item" href="#">offcanvas resource3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------ -->
     <footer id="copyRight" class="p-3"></footer>
     <div id="script-bootstrap"></div>
     <script src="nav-head-template.js"></script>

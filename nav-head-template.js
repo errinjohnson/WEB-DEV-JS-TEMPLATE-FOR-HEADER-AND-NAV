@@ -598,18 +598,77 @@ function copyRight() {
   attCenter.value = "text-center";
   elPara.setAttributeNode(attCenter);
   let t111 = document.createTextNode("Website Copyright 2015-2021 Errin E Johnson, All Rights Reserved.");
-
   elPara.appendChild(t111);
   copyR.appendChild(elPara);
 
 }
 copyRight();
 
-function hideEndOfStory() {
-  // let hideEndOfStoryID = document.getElementById("container_KZrImQ-oMh5");
-  // let hideEndOfStoryClass = document.getElementsByName("endOfStoryShareWrapper");
-  let hideEndOfStoryClass = document.getElementsByClassName("endOfStoryShareButton");
+//AlchemyMomentumDir Button
+let el1 = document.getElementById("offcanvasStart");
+let ela = document.getElementById("labelInput");
+let elb = document.getElementById("msg1");
 
-
+function labelInput() {
+  ela.innerHTML = `<input id="pwd1" name="pwd_a" autofocus>
+  <button class="btn btn-primary" onclick="protoTypeDir();">submit</button`;
 }
-hideEndOfStory();
+
+function getDataDirectory() {
+  let password = document.getElementById("pwd1").value;
+  console.log(`${password}`)
+  return password;
+}
+
+function protoTypeDir() {
+  //toggle display
+  let ui_answer = "genius55";
+  let userName = "Desiree";
+  let answer1 = getDataDirectory();
+  console.log(answer1);
+
+  if (ui_answer == answer1) {
+    el1.className = "offcanvas offcanvas-start d-block";
+    ela.style.display = "none";
+    elb.innerHTML = `<p> Hi ${userName}, you are logged in. </p>`
+  } else {
+    ela.innerHTML = "Please enter a valid password!";
+    console.log("false");
+  }
+}
+////////////////////////////////////////////AlchemyMomentumDir Button end/////////// 
+//AlchemyMomentumResources Button
+let el2 = document.getElementById("offcanvasStart2");
+let el2a = document.getElementById("labelInput2");
+let el2c = document.getElementById("msg2");
+
+function labelInput2() {
+  el2a.innerHTML = `<input  type="text" id="pwd2" name="pwd_b" autofocus>
+  <button class="btn btn-primary" onclick="protoTypeDir2();">submit</button`;
+}
+
+function getDataDirectory2() {
+  let password2 = document.getElementById("pwd2").value;
+  console.log(`${password2}`)
+  return password2;
+}
+
+function protoTypeDir2() {
+  //toggle display
+  let ui_answer = "genius55";
+  let userName = "Desiree";
+
+  let answer1 = getDataDirectory2();
+  console.log(answer1);
+
+  if (ui_answer == answer1) {
+    el2.className = "offcanvas offcanvas-start d-block";
+    el2a.style.display = "none";
+    el2c.innerHTML = `<p> Hi ${userName}, you are logged in. </p>`
+    }
+    else {
+      el2a.innerHTML = "Please enter a valid password!";
+      console.log("false");
+    }
+  }
+  ////////////////////////////////////////////AlchemyMomentumDir Button end/////////// 
