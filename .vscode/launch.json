@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "pwa-chrome",
+            "name": "file:///D:/Portfolio/software-dev-portfolio/codeTestJS.html",
+            "request": "launch",
+            "url": "file:///D:/Portfolio/software-dev-portfolio/codeTestJS.html"
+        }
+    ]
+}

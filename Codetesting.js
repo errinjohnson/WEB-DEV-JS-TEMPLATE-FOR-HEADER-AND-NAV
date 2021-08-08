@@ -28,42 +28,47 @@ btn_js.addEventListener('click', function () {
     }
 });
 
-function keyEnterq1() {
-    btn_keyup.click();
-    return;
-}
-
-
 ///GET DATA
 function getData() {
-
     let input = document.getElementsByName('array[]');
     let arr = [];
     for (let i = 0; i < input.length; i++) {
-        arr.push(input[i].value);
+        arr.push(parseInt(input[i].value));
+        console.log(i);
     }
     q1a.innerHTML = arr + " Data has been updated!";
-    //console.log( arr + " test getData complete");
+    console.log( arr + " test getData complete");
     return arr;
 }
-///CALC SUM OF WHOLE
-function SumOfWhole() {
+///Solve for n "number of terms"
+function solveForN() {
+    let arr = [];
     let data = getData();
-    //console.log(data, "array values");
-    let limit = data[0];
-    let factor = data[1]
-    let factor_sum = factor;
-    let sum_of_whole = 0;
-
-    for (let x = 0; x < limit; x++) {
-        factor_sum = factor * x;
-        //console.log(factor_sum, "factor sum TESTING");
-    }
-
-    sum_of_whole = factor * factor_sum;
-    //console.log(sum_of_whole, "sum of whole TESTING");
-    q1.innerHTML = "Sum of Whole = " + sum_of_whole +
-        " by factor of " + factor + ".";
+    console.log(data, "user input array values");
+    let a = data[0]; // whole number;
+    let b = data[1]; //1st num or multiple of 
+    let n = a/b; 
+    console.log(`${n} solve for n`);
+   
+    arr.push(a,b);
+    arr.push(n);
+    console.log(`${arr} initial array`);
+    return (arr);
+} 
+//Sum of Whole Number calc
+function sumOfWhole() {
+    let data = solveForN();
+    let q1 = document.getElementById("q1");
+     let a = data[0]; //whole number
+     let b = data[1];//1st number of multiple of
+     let n = data[2];
+     console.log(`${n/2} = n / 2`);
+     let add = a + b;
+     console.log(`${add} = a + b`);
+     let s = (n/2) * (add);
+     console.log(`${s} = (n / 2) * (a + b)`);
+    
+    q1.innerHTML = `Sum of Whole = ${s} by Multiple of ${b}`;
 }
 /////////////////////    Q2 BLOCK     ////////////////////////////
 ///EVENT LISTENERS
@@ -73,10 +78,6 @@ let code_js_2 = document.getElementById("script_2");
 let btn_js_paren = document.getElementById("btn_test_paren");
 let q2_Input = document.getElementById("input_paren");
 let q2 = document.getElementById("q2");
-
-function keyEnterq2() {
-    btn_js_paren.click();
-}
 
 ///'CLICK' LISTENER - DISPLAY 2
 
@@ -137,16 +138,6 @@ btn_script_3.addEventListener('click', function () {
         btn_script_3.innerHTML = "View Script 3";
     }
 });
-
-function keyEnterq3a() {
-    q3b_calc.click();
-    return;
-}
-
-function keyEnterq3b() {
-    q3c_calc.click();
-    return;
-}
 ///NON-RECURSIVE METHOD
 ///GET DATA                         
 function getData3() {
@@ -196,7 +187,7 @@ function recursion(n, sum) {
     }
 }
 /////////////////////    Q4 BLOCK     ////////////////////////////
-///EVENT LISTENERS 'CLICK'
+///EVENT LISTENERS 'CLICK' script images
 let btn_script_4 = document.getElementById("btn_script_4");
 let script_4 = document.getElementById("script_4");
 btn_script_4.addEventListener('click', function () {
@@ -209,42 +200,34 @@ btn_script_4.addEventListener('click', function () {
     }
 });
 
-let q4_input = document.getElementById("reverseStr");
+
+///PART 1 | REVERSE WHOLE BY WHOLE WORD
+let input_q4 = document.getElementById("inputReverseStr");
 let btn_q4 = document.getElementById("btn_q4");
-
-function keyEnterq4() {
-    btn_q4.click();
-}
-///PART 1 | REVERSE WHOLE STRING
+let q4a = document.getElementById("q4a");
+q4a.style.backgroundColor = "red";
+//q4a.style.backgroundColor = "#A8B9FF80";
 function getData4() {
-    let str = "";
-    let input = document.getElementsByName("array4[]");
-    for (let z = input.length - 1; z >= 0; z--) {
-        str += input[z].value;
-    }
-    return str;
-}
 
+}
 function reverseStr() {
-    let data = getData4();
-    let result = "";
-    for (let y = data.length - 1; y >= 0; y--) {
-        result += (data[y]);
-    }
-    console.log(result);
-    let q4a = document.getElementById("q4a");
-    q4a.style.backgroundColor = "#A8B9FF80";
-    q4a.innerHTML = `Result: ${result}`;
+
 }
-///PART 2 | REVERSE BY WHOLE WORLD
-function getDataWholeWord() {
-    let data = document.getElementById("reverseStr2");
-    const str1 = data.match(/\S/g);
-    return str1;
-}
+///PART 2 | REVERSE WHOLE STRING
+let input_q4_b = document.getElementsByName("inputReverseStr2");
+let btn_q4b = document.getElementById("btn_q4b");
 let q4b = document.getElementById("q4b");
 q4b.style.backgroundColor = "red";
-q4b.innerHTML = "In Progress";
+//q4b.style.backgroundColor = "#A8B9FF80";
+
+function getData4_b() {
+
+    }
+    
+function reverseStr2() {
+
+}
+
 /////////////////////    Q5 BLOCK     ////////////////////////////
 ///EVENT LISTENERS 'CLICK'
 let btn_script_5 = document.getElementById("btn_script_5");
@@ -295,13 +278,21 @@ let data = {
 
 function db(obj) {
     let arr = [];
-    let heading = `<div class="row px-3 mx-3 mt-3"><div class="col">NAME</div><div class="col"> ` +
-        `BUSINESS#</div><div class="col">CELL#</div><div class="col">HOME#</div></div>`;
+    let heading = `<div class="row mt-3">
+    <p class="col px-3">NAME</p>
+    <p class="col px-3">BUSINESS#</p>
+    <p class="col px-3">CELL#</p>
+    <p class="col px-3">HOME#</p>
+    </div>`;
+    let q5c = document.getElementById("q5c");
     let q5b = document.getElementById("q5b");
     for (let x = 0; x < obj.contact.length; x++) {
-        let record = `<div class="row px-3 mx-3"><div class="col">${obj.contact[x].name}</div>` +
-            `<div class="col">${obj.contact[x].business}</div><div class="col">${obj.contact[x].cell}</div> ` +
-            `<div class="col">${obj.contact[x].home}</div></div>`;
+        let record = `<div class="row">
+        <div class="col">${obj.contact[x].name}</div>
+        <div class="col">${obj.contact[x].business}</div>
+        <div class="col">${obj.contact[x].cell}</div>
+        <div class="col">${obj.contact[x].home}</div>
+        </div>`;
         arr.push(record);
     }
     q5c.innerHTML = heading;
@@ -313,12 +304,41 @@ q5c.style.backgroundColor = "#98678b";
 q5b.style.backgroundColor = "#679874";
 // /////////////////////    Q6 BLOCK     ////////////////////////////
 //////////////////TEMPLATE HEADING
-let heading = `<div class="row px-3 mx-3 mt-3"><div class="col">TRAINER</div><div class="col">CLIENTS</div></div>`;
+let heading3 = `<div class="row mt-3">
+<div class="col">TRAINER</div>
+<div class="col">CLIENT</div>
+<div class="col">Equipment</div>
+</div>`;
+let heading2 = `<div class="row mt-3">
+<div class="col">Exercise Class</div>
+<div class="col">Day</div>
+<div class="col">Time</div>
+</div>`;
 let q6a = document.getElementById("q6a");
-q6a.innerHTML = heading;
+q6a.innerHTML = heading3;
+q6a.style.backgroundColor = "#98678b";
+
 let q6b = document.getElementById("q6b");
+q6b.style.backgroundColor = "#679874";
 
+let q6c = document.getElementById("q6c");
+q6c.innerHTML = heading2;
+q6c.style.backgroundColor = "#98678b";
+let q6d = document.getElementById("q6d");
+q6d.style.backgroundColor = "#679874";
 
+//////////////////EVENT LISTENERS
+let btn_script_6 = document.getElementById("btn_script_6");
+let script_6 = document.getElementById("script_6");
+btn_script_6.addEventListener('click', function () {
+    if (script_6.style.display == "none") {
+        script_6.style.display = "contents";
+        btn_script_6.innerHTML = "Close Script 6";
+    } else {
+        script_6.style.display = "none";
+        btn_script_6.innerHTML = "View Script 6";
+    }
+});
 
 /////////////////////// OBJECT AND CLASSES
 class Trainer {
@@ -326,13 +346,20 @@ class Trainer {
         this.lName = lName;
         this.fName = fName;
     }
+}
 
+class Wellness {
+    constructor(classRoom, classDay, ClassTime) {
+        this.classRoom = classRoom;
+        this.classDay = classDay;
+        this.classTime = ClassTime;
+    }
 }
 
 class Equipment {
-    constructor() {
-        this.machine = machine;
-        this.weights = weights;
+    constructor(mach, weigh) {
+        this.machine = mach;
+        this.weights = weigh;
     }
 }
 
@@ -343,11 +370,22 @@ class Customer {
     }
 }
 
-let myCustomer = new Customer('Mckenzie', 'Errin');
+let myCustomer1 = new Customer('Mckenzie', 'Errin');
 let myTrainer1 = new Trainer('Evers', 'Tom');
+let myEquipment1 = new Equipment('treadmill', 'weight machines');
+let myWellness1 = new Wellness('mind and body yoga', 'Monday', '12:45 PM');
 
+q6b.innerHTML = `<div class="row mt-3">
+<div class="col">${myTrainer1.fName}  ${myTrainer1.lName}</div>
+<div class="col">${myCustomer1.fName}  ${myCustomer1.lName}</div>
+<div class="col">${myEquipment1.machine} , ${myEquipment1.weights}</div>
+</div>`;
 
-q6b.innerHTML = `<div class="row px-3 mx-3 mt-3"><div class="col">${myTrainer1.fName}   ${myTrainer1.lName}</div><div class="col">${myCustomer.fName}   ${myCustomer.lName}</div></div>`;
+q6d.innerHTML = `<div class="row mt-3">
+<div class="col">${myWellness1.classRoom}</div>
+<div class="col">${myWellness1.classDay}</div>
+<div class="col">${myWellness1.classTime}</div>
+</div>`
 
 // ///////////////////////////////////////////
 console.log("END OF FILE");

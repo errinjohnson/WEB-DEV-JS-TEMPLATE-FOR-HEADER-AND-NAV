@@ -33,7 +33,7 @@ function addHeadElements() {
   meta3.setAttributeNode(att5Meta3);
 
   let att6Meta3 = document.createAttribute("content");
-  att6Meta3.value = "width=device-width, initial-scale=1";
+  att6Meta3.value = "width=device-width, initial-scale=1.0";
   meta3.setAttributeNode(att6Meta3);
 
   include1.appendChild(meta3);
