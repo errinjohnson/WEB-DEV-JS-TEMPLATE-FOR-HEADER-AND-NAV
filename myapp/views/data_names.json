@@ -1,0 +1,28 @@
+{
+    "data": {
+        "title": "First and Last Name, a list!",
+        "names": [
+            {
+                "firstName": "Errin",
+                "lastName": "Johnson"
+            },
+            {
+                "firstName": "Charle",
+                "lastName": "Reynolds"
+            },
+            {
+                "firstName": "Kelly",
+                "lastName": "Mckenzie"
+            },
+            {
+                "firstName": "Rosemarie",
+                "lastName": "Johnson"
+            },
+            {
+                "firstName": "Deanne",
+                "lastName": "Mckenzie"
+            }
+            
+        ] 
+    }
+}

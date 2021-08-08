@@ -16,21 +16,25 @@ function readMore() { //get elements assign to variable
 document.body.onload = addElement;
 // document.getElementById("viewEvent").addEventListener("load",addElement2);
 
+// let str = document.getElementsByClassName("div.adiv:nth-child(4)");
+// str.innerHTML = "New Dates!";
 
 function addElement() {
     // CREATE NEW DIV add NEW CONTENT and SET ATTRIBUTE
     let newDiv = document.createElement("div");
     newDiv.setAttribute("id", "myID");
+    newDiv.setAttribute("class", "d-block w-100");
     let newContent = document.createElement("a");
     newContent.setAttribute("href", "https://rockitwomen.com");
     newContent.setAttribute("target", "__blank");
     newContent.setAttribute("class", "mx-auto");
+    
         
     newDiv.appendChild(newContent);
 
     let newContent2 = document.createElement("img");
     newContent2.src = "https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/RockIT_Logo.jpg";
-    newContent2.setAttribute("class", "rounded");
+    newContent2.setAttribute("class", "rounded mx-auto d-block");
 
     newContent.appendChild(newContent2);
 
