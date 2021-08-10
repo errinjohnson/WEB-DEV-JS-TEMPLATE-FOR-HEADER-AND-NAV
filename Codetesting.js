@@ -37,7 +37,7 @@ function getData() {
         console.log(i);
     }
     q1a.innerHTML = arr + " Data has been updated!";
-    console.log( arr + " test getData complete");
+    console.log(arr + " test getData complete");
     return arr;
 }
 ///Solve for n "number of terms"
@@ -47,27 +47,27 @@ function solveForN() {
     console.log(data, "user input array values");
     let a = data[0]; // whole number;
     let b = data[1]; //1st num or multiple of 
-    let n = a/b; 
+    let n = a / b;
     console.log(`${n} solve for n`);
-   
-    arr.push(a,b);
+
+    arr.push(a, b);
     arr.push(n);
     console.log(`${arr} initial array`);
     return (arr);
-} 
+}
 //Sum of Whole Number calc
 function sumOfWhole() {
     let data = solveForN();
     let q1 = document.getElementById("q1");
-     let a = data[0]; //whole number
-     let b = data[1];//1st number of multiple of
-     let n = data[2];
-     console.log(`${n/2} = n / 2`);
-     let add = a + b;
-     console.log(`${add} = a + b`);
-     let s = (n/2) * (add);
-     console.log(`${s} = (n / 2) * (a + b)`);
-    
+    let a = data[0]; //whole number
+    let b = data[1]; //1st number of multiple of
+    let n = data[2];
+    console.log(`${n/2} = n / 2`);
+    let add = a + b;
+    console.log(`${add} = a + b`);
+    let s = (n / 2) * (add);
+    console.log(`${s} = (n / 2) * (a + b)`);
+
     q1.innerHTML = `Sum of Whole = ${s} by Multiple of ${b}`;
 }
 /////////////////////    Q2 BLOCK     ////////////////////////////
@@ -200,32 +200,50 @@ btn_script_4.addEventListener('click', function () {
     }
 });
 
-
 ///PART 1 | REVERSE WHOLE BY WHOLE WORD
-let input_q4 = document.getElementById("inputReverseStr");
-let btn_q4 = document.getElementById("btn_q4");
+
 let q4a = document.getElementById("q4a");
 q4a.style.backgroundColor = "red";
 //q4a.style.backgroundColor = "#A8B9FF80";
+
 function getData4() {
-
+    let str = document.getElementById("input_q4").value;
+    return str;
 }
-function reverseStr() {
 
+function reverseStr() {
+    arr1 = [];
+    arr2 = [];
+    let data2 = getData4();
+    console.log(`${data2.length} data2.length`);
+    console.log(`${data2} data2`);
+
+
+
+    console.log(`[${arr1.length}] arr1.length`);
+    console.log(`[${arr1.join("")}] arr1 join("")`);
+    console.log(`${arr2} arr2`);
+    //let arr3 = arr1.join("");
 }
 ///PART 2 | REVERSE WHOLE STRING
 let input_q4_b = document.getElementsByName("inputReverseStr2");
 let btn_q4b = document.getElementById("btn_q4b");
 let q4b = document.getElementById("q4b");
-q4b.style.backgroundColor = "red";
-//q4b.style.backgroundColor = "#A8B9FF80";
+q4b.style.backgroundColor = "#A8B9FF80";
 
 function getData4_b() {
+    let str2 = document.getElementById("inputReverseStr2").value;
+    return str2;
+}
 
-    }
-    
 function reverseStr2() {
-
+    let str3 = "";
+    let data3 = getData4_b();
+    for(let i = data3.length - 1; i >=0; i--){
+        str3 += data3[i];
+    }
+    console.log(`${str3} str3`);
+    q4b.innerHTML = `Results: ${str3}`
 }
 
 /////////////////////    Q5 BLOCK     ////////////////////////////
