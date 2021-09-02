@@ -199,32 +199,29 @@ btn_script_4.addEventListener('click', function () {
         btn_script_4.innerHTML = "View Script 4";
     }
 });
-
 ///PART 1 | REVERSE WHOLE BY WHOLE WORD
-
+///////////////////////////////////////
 let q4a = document.getElementById("q4a");
-q4a.style.backgroundColor = "red";
-//q4a.style.backgroundColor = "#A8B9FF80";
+q4a.style.backgroundColor = "#A8B9FF80";
 
 function getData4() {
     let str = document.getElementById("input_q4").value;
     return str;
 }
-
 function reverseStr() {
-    arr1 = [];
-    arr2 = [];
     let data2 = getData4();
-    console.log(`${data2.length} data2.length`);
-    console.log(`${data2} data2`);
+    // console.log(`${data2.length} data2.length`);
+    // console.log(`${data2} data2`);
 
-
-
-    console.log(`[${arr1.length}] arr1.length`);
-    console.log(`[${arr1.join("")}] arr1 join("")`);
-    console.log(`${arr2} arr2`);
-    //let arr3 = arr1.join("");
+    let arr = [];
+    let words = data2.split(' ');
+    for(let j = words.length -1; j >=0; j--){
+        arr.push(words[j]);
+    }
+    let newWords = arr.join(" ");
+    q4a.innerHTML = `${newWords}`;
 }
+////////////////////////////////////////////
 ///PART 2 | REVERSE WHOLE STRING
 let input_q4_b = document.getElementsByName("inputReverseStr2");
 let btn_q4b = document.getElementById("btn_q4b");
@@ -245,7 +242,6 @@ function reverseStr2() {
     console.log(`${str3} str3`);
     q4b.innerHTML = `Results: ${str3}`
 }
-
 /////////////////////    Q5 BLOCK     ////////////////////////////
 ///EVENT LISTENERS 'CLICK'
 let btn_script_5 = document.getElementById("btn_script_5");
