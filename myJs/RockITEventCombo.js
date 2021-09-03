@@ -1,3 +1,5 @@
+//https://calendar.google.com/calendar/u/0/r/eventedit?text=Small+Business+%0ACYBER+BOOTCAMP&dates=20210823T150000Z/20210914T220000Z&details=+ZOOM%20+%20Why+should+women+learn+Cybersecurity?++%0A+++++++%0A+++++++%0A++++++++There+is+a+skills+shortage+in+cybersecurity+within+the+Metro+Louisville+demographic.&location
+
 function readMore() { //get elements assign to variable
     var dotText = document.getElementById("dot");
     var readMoreText = document.getElementById("readMore");

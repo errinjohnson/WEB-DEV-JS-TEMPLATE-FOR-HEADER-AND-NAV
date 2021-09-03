@@ -1,0 +1,42 @@
+{
+    "json.net" : "convert c# objects to json",
+    "codeTestInstructions": "Write what you would think is the best possible solution to the questions below. Consider the following.",
+    "considerations": 
+    {
+        "dataType": "",
+        "modularization or repeatable code": "classes and objects that can be used by another client(another class)",
+        "type safe": "only appropriate behavior allowed",
+        "self documenting": "program element is one that is self explanatory"
+    },
+    "defintions":
+     {
+        "jit-dev" : ""
+    },
+    "purpose" : 
+    {
+        "statement" : "Discover Just In Time Developer(JIT-Dev). Strong soft skills that will result in JIT learning, creative approches to a problem, solutions that are modular."
+    },
+    "formulas" :
+    {
+        "question1": {
+            "ap" : 
+             {
+                "apDefine": "Arithmetic Progression Formula",
+                "sumOfWhole": "sumOfW = (n / 2) * (a + b)",
+                "solveForN" : "n = a/b",
+                "n" : "number of terms",
+                "a": "whole number(1000), 2nd number",
+                "b": "1st number or multple of or common difference"
+            }
+        }
+    },
+    "methods": 
+    {
+        "question1" :
+        {
+            "getData": "GetData()",
+            "golveForN": "SolveForN()",
+            "sumOfWhole": "SumOfW()"
+        }
+    }  
+}
