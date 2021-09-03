@@ -27,7 +27,6 @@ btn_js.addEventListener('click', function () {
         btn_js.innerHTML = "View Script";
     }
 });
-
 ///GET DATA
 function getData() {
     let input = document.getElementsByName('array[]');
@@ -208,6 +207,7 @@ function getData4() {
     let str = document.getElementById("input_q4").value;
     return str;
 }
+
 function reverseStr() {
     let data2 = getData4();
     // console.log(`${data2.length} data2.length`);
@@ -215,7 +215,7 @@ function reverseStr() {
 
     let arr = [];
     let words = data2.split(' ');
-    for(let j = words.length -1; j >=0; j--){
+    for (let j = words.length - 1; j >= 0; j--) {
         arr.push(words[j]);
     }
     let newWords = arr.join(" ");
@@ -236,11 +236,11 @@ function getData4_b() {
 function reverseStr2() {
     let str3 = "";
     let data3 = getData4_b();
-    for(let i = data3.length - 1; i >=0; i--){
+    for (let i = data3.length - 1; i >= 0; i--) {
         str3 += data3[i];
     }
     console.log(`${str3} str3`);
-    q4b.innerHTML = `Results: ${str3}`
+    q4b.innerHTML = ` ${str3}`
 }
 /////////////////////    Q5 BLOCK     ////////////////////////////
 ///EVENT LISTENERS 'CLICK'

@@ -290,7 +290,7 @@ function addNavElements2() {
   newLi_c1.setAttributeNode(attClass11_c);
 
   let href5_c = document.createAttribute("href");
-  href5_c.value = "codeTestJS.html";
+  href5_c.value = "codeTest.html";
   newLi_c1.setAttributeNode(href5_c);
 
   let t5_c = document.createTextNode("Featured JS Project"); //////////////FEATURED PROJECT/////////////////////
