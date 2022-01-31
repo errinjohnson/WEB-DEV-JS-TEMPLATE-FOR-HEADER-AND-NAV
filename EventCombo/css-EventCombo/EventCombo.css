@@ -1,14 +1,18 @@
 #readMore {
     display: none;
 }
+
 /*//event flyer section*/
 .eventFlyer {
     display: none;
 }
+
 /* js 'read more' script*/
-.c10, .s1 {
-  margin: 0;
-  }
+.c10,
+.s1 {
+    margin: 0;
+}
+
 #myID a img {
     max-width: 250px;
     max-height: 250px;
@@ -18,13 +22,14 @@ button#btn {
     padding: 15px;
     color: black;
     font-family: georgia;
-    background: rgb(199,0,126);
-    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
+    background: rgb(199, 0, 126);
+    background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
     text-transform: uppercase;
     border-radius: 10px;
 }
 
-footer, header,
+footer,
+header,
 .text-links li,
 .text-links li a {
     display: none;
@@ -91,11 +96,19 @@ c12.tides {
 }
 
 a {
-    color: #E135A2;
+    color: tomato;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
 }
 
 a:visited {
-    color: #8A2BE2;
+    color: violet;
 }
 
 .red-heading,
@@ -109,8 +122,8 @@ a:visited {
 .buttons,
 .enterPromoCode,
 .tot {
-    background: rgb(199,0,126);
-    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
+    background: rgb(199, 0, 126);
+    background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
     color: black;
 }
 
@@ -119,8 +132,8 @@ body {
 }
 
 section.eventBanner {
-    background: rgb(199,0,126);
-    background: linear-gradient(90deg, rgba(199,0,126,1) 28%, rgba(178,40,148,0.5387198824842436) 45%);
+    background: rgb(199, 0, 126);
+    background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
     max-width: 960px;
     margin: 0 auto;
 }
@@ -132,5 +145,3 @@ section.eventBanner {
     margin: 0 auto;
     }
   } */
-
-

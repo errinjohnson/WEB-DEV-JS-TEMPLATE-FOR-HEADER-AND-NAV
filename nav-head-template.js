@@ -315,10 +315,10 @@ function addNavElements2() {
   newLi_b.setAttributeNode(attClass11);
 
   let href5 = document.createAttribute("href");
-  href5.value = "https://errinjohnson.github.io/";
+  href5.value = "#";
   newLi_b.setAttributeNode(href5);
 
-  let t5 = document.createTextNode("IoT Workshop"); //////////////IoT MENU LINK/////////////////////
+  let t5 = document.createTextNode("Empty"); //////////////IoT MENU LINK/////////////////////
   newLi_b.appendChild(t5);
 
   let attTarget = document.createAttribute("target");
@@ -665,10 +665,9 @@ function protoTypeDir2() {
     el2.className = "offcanvas offcanvas-start d-block";
     el2a.style.display = "none";
     el2c.innerHTML = `<p> Hi ${userName}, you are logged in. </p>`
-    }
-    else {
-      el2a.innerHTML = "Please enter a valid password!";
-      console.log("false");
-    }
+  } else {
+    el2a.innerHTML = "Please enter a valid password!";
+    console.log("false");
   }
-  ////////////////////////////////////////////AlchemyMomentumDir Button end/////////// 
+}
+////////////////////////////////////////////AlchemyMomentumDir Button end/////////// 
