@@ -138,6 +138,13 @@ section.eventBanner {
     margin: 0 auto;
 }
 
+.imgBg {
+    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/Juneimage001.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+}
+
 /* @media screen and (max-device-width: 768px) {
    section.eventBanner{
     background-image:url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/clouds587x330.jpg");
