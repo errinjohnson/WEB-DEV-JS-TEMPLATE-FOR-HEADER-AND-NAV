@@ -1,0 +1,259 @@
+/* NOTE: ISSUE WITH RIGHT SIDE OF WEBPAGE, SPACE UNACCOUNTED FOR, NEEDS TO BE FIXED!! */
+
+/* * * * * **********  GLOBAL VARIABLES   ******* * * * * * * * * * * */
+.text-success {
+    color: black !important;
+}
+
+body {
+    max-width: fit-content;
+    margin: 20px auto;
+    color: black;
+    background-color: transparent;
+    font-family: 'Lora',
+        serif;
+    /* font-family: 'Indie Flower',
+        cursive; */
+}
+
+a,
+a:visited,
+.devSkills h4 {
+    color: chocolate;
+}
+
+ul {
+    list-style-position: outside;
+    list-style-type: circle;
+}
+
+.card {
+    margin-right: 5px;
+}
+
+.card-header,
+.card-title {
+    margin: 0 auto;
+}
+
+.card,
+main,
+.btn {
+    background-color: #dbd5d5;
+}
+
+.btn {
+    font-weight: 600;
+    border: 2.5px solid chocolate;
+}
+
+.fName,
+.title,
+.card-title,
+.card-header,
+.technicalSkills h4,
+.softSkills h4,
+.summary h4,
+.portfolio,
+.education h4,
+.certs h4,
+.workExp h4 {
+    color: brown;
+}
+
+.summary p {
+    margin: 10px;
+}
+
+.summary h4 {
+    margin-top: 15px;
+}
+
+header,
+aside,
+.devSkills h4:nth-of-type(1),
+.card-header a,
+.card-title a {
+    border-radius: 5px;
+}
+
+header,
+aside,
+.devSkills h4:nth-of-type(1),
+.card-header a,
+.card-title a .summary h4,
+.portfolio,
+.workExp h4,
+.summary h3,
+h6.card-title {
+    text-align: center;
+}
+
+h6.card-title {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/* * * * * **********GRID | FLEXBOX VARIABLES  ******* * * * * * * * * * * */
+.grid-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "footer";
+    grid-template-columns: repeat(auto-fit, minmax(350px, 450px));
+}
+
+header {
+    grid-area: header;
+
+}
+
+aside {
+    grid-area: aside;
+
+}
+
+/* NOTE:column reversed for 'ASIDE' TAG */
+aside {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.bookTime {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+footer {
+    display: grid;
+    grid-template-areas:
+        "footnote footnote"
+        "print update";
+    height: 100%;
+    box-shadow: 5px 5px 30px firebrick inset;
+}
+
+#footnote {
+    grid-area: footnote;
+}
+
+.print {
+    grid-area: print;
+}
+
+.update {
+    grid-area: update;
+}
+
+#footnote,
+.print,
+.update {
+    display: flex;
+    margin: 10px 5px;
+    justify-content: center;
+}
+
+/* * * * * ********** MEDIA QUERY  ******* * * * * * * * * * * */
+@media screen and (min-width:768px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            "header aside"
+            "main main"
+            "footer footer";
+        max-width: 950px;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas:
+            "summary summary summary summary"
+            "techSkills techSkills technicalSkills technicalSkills"
+            "softSkills softSkills softSkills softSkills"
+            "portfolio portfolio portfolio portfolio"
+            "education education certs certs"
+            "workExp workExp workExp workExp"
+            "workExp2 workExp2 workExp2 workExp2";
+    }
+
+    .summary {
+        grid-column: 1 / 5;
+        box-shadow: 5px 5px 30px firebrick;
+    }
+
+    .devSkills,
+    .technicalSkills,
+    .softSkills,
+    .portfolio,
+    .education,
+    .certs {
+        max-width: 450px;
+        display: flex;
+    }
+
+    .devSkills,
+    .technicalSkills,
+    .softSkills {
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    .softSkills {
+        grid-column: 2 / 4;
+    }
+
+    .devSkills {
+        grid-column: 1 / 3;
+    }
+
+    .technicalSkills {
+        grid-column: 3 / 5;
+
+    }
+
+    .portfolio {
+        grid-column: 1 / 5;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .education {
+        grid-column: 1 / 3;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .certs {
+        grid-column: 3 / 5;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
+
+    .workExp {
+        grid-area: workExp;
+    }
+
+    .workExp2 {
+        grid-area: workExp2;
+    }
+
+    .card {
+        min-width: 450px;
+    }
+
+
+
+}
+
+/* * * * * ********** END MEDIA QUERY  ******* * * * * * * * * * * */
