@@ -184,7 +184,8 @@ footer {
             "portfolio portfolio portfolio portfolio"
             "education education certs certs"
             "workExp workExp workExp workExp"
-            "workExp2 workExp2 workExp2 workExp2";
+            "workExp2 workExp2 workExp2 workExp2"
+            "workExp3 workExp3 workExp3 workExp3";
     }
 
     .summary {
@@ -246,6 +247,10 @@ footer {
 
     .workExp2 {
         grid-area: workExp2;
+    }
+
+    .workExp3 {
+        grid-area: workExp3;
     }
 
     .card {
