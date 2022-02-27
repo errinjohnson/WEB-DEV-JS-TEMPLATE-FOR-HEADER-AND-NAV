@@ -196,10 +196,13 @@ footer {
     .devSkills,
     .technicalSkills,
     .softSkills,
-    .portfolio,
     .education,
     .certs {
         max-width: 450px;
+        display: flex;
+    }
+
+    .portfolio {
         display: flex;
     }
 
@@ -256,8 +259,6 @@ footer {
     .card {
         min-width: 450px;
     }
-
-
 
 }
 
