@@ -18,7 +18,7 @@ body {
 
 a,
 a:visited,
-.devSkills h4 {
+.devSkills h5 {
     color: chocolate;
 }
 
@@ -51,13 +51,13 @@ main,
 .title,
 .card-title,
 .card-header,
-.technicalSkills h4,
-.softSkills h4,
-.summary h4,
+.technicalSkills h5,
+.softSkills h5,
+.summary h5,
 .portfolio,
-.education h4,
-.certs h4,
-.workExp h4 {
+.education h5,
+.certs h5,
+.workExp h5 {
     color: brown;
 }
 
@@ -65,13 +65,13 @@ main,
     margin: 10px;
 }
 
-.summary h4 {
+.summary h5 {
     margin-top: 15px;
 }
 
 header,
 aside,
-.devSkills h4:nth-of-type(1),
+.devSkills h5:nth-of-type(1),
 .card-header a,
 .card-title a {
     border-radius: 5px;
@@ -79,11 +79,11 @@ aside,
 
 header,
 aside,
-.devSkills h4:nth-of-type(1),
+.devSkills h5:nth-of-type(1),
 .card-header a,
-.card-title a .summary h4,
+.card-title a .summary h5,
 .portfolio,
-.workExp h4,
+.workExp h5,
 .summary h3,
 h6.card-title {
     text-align: center;
@@ -185,7 +185,8 @@ footer {
             "education education certs certs"
             "workExp workExp workExp workExp"
             "workExp2 workExp2 workExp2 workExp2"
-            "workExp3 workExp3 workExp3 workExp3";
+            "workExp3 workExp3 workExp3 workExp3"
+            "workExp4 workExp4 workExp4 workExp4";
     }
 
     .summary {
@@ -254,6 +255,10 @@ footer {
 
     .workExp3 {
         grid-area: workExp3;
+    }
+
+    .workExp4 {
+        grid-area: workExp4;
     }
 
     .card {
