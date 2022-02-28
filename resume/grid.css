@@ -94,6 +94,10 @@ h6.card-title {
     margin-top: 0;
 }
 
+/* .haleh {
+    background-color: antiquewhite;
+} */
+
 /* * * * * **********GRID | FLEXBOX VARIABLES  ******* * * * * * * * * * * */
 .grid-container {
     display: grid;
@@ -139,6 +143,8 @@ footer {
     display: grid;
     grid-template-areas:
         "footnote footnote"
+        "footnote2 footnote2"
+        "footnote3 footnote3"
         "print update";
     height: 100%;
     box-shadow: 5px 5px 30px firebrick inset;
@@ -146,6 +152,14 @@ footer {
 
 #footnote {
     grid-area: footnote;
+}
+
+#footnote2 {
+    grid-area: footnote2;
+}
+
+#footnote3 {
+    grid-area: footnote3;
 }
 
 .print {
@@ -157,6 +171,8 @@ footer {
 }
 
 #footnote,
+#footnote2,
+#footnote3,
 .print,
 .update {
     display: flex;
