@@ -6,8 +6,8 @@
 }
 
 body {
-    max-width: fit-content;
-    margin: 20px auto;
+    max-width: 950px;
+    margin: auto;
     color: black;
     background-color: transparent;
     box-shadow: 5px 5px 30px rgb(124, 90, 90);
@@ -196,7 +196,6 @@ footer {
             "header aside"
             "main main"
             "footer footer";
-        max-width: fit-content;
     }
 
     main {
@@ -221,7 +220,6 @@ footer {
     .softSkills,
     .education,
     .certs {
-        max-width: 500px;
         display: flex;
     }
 
@@ -289,10 +287,6 @@ footer {
 
     .workExp4 {
         grid-area: workExp4;
-    }
-
-    .card {
-        min-width: 450px;
     }
 
 }
