@@ -52,10 +52,10 @@ main,
 .title,
 .card-title,
 .card-header,
-.technicalSkills h5,
 .softSkills h5,
 .summary h5,
 .portfolio,
+.portfolio2,
 .education h5,
 .certs h5,
 .workExp h5 {
@@ -88,6 +88,7 @@ aside,
 .card-header a,
 .card-title a .summary h5,
 .portfolio,
+.portfolio2,
 .workExp h5,
 .summary h3,
 h6.card-title {
@@ -206,9 +207,8 @@ footer {
         display: grid;
         grid-template-areas:
             "summary summary summary summary"
-            "techSkills techSkills technicalSkills technicalSkills"
-            "softSkills softSkills softSkills softSkills"
-            "portfolio portfolio portfolio portfolio"
+            "softSkills devSkills devSkills devSkills"
+            "portfolio portfolio portfolio2 portfolio2"
             "education education certs certs"
             "workExp workExp workExp workExp"
             "workExp2 workExp2 workExp2 workExp2"
@@ -217,11 +217,11 @@ footer {
     }
 
     .summary {
-        grid-column: 1 / 5;
+        grid-area: summary;
+        /* grid-column: 1 / 5; */
     }
 
     .devSkills,
-    .technicalSkills,
     .softSkills,
     .education,
     .certs {
@@ -229,44 +229,53 @@ footer {
         display: flex;
     }
 
-    .portfolio {
+    .portfolio,
+    .portfolio2 {
         display: flex;
     }
 
     .devSkills,
-    .technicalSkills,
     .softSkills {
         align-items: baseline;
         justify-content: space-evenly;
     }
 
     .softSkills {
-        grid-column: 2 / 4;
+        grid-area: softSkills;
+        /* grid-column: 1 / 2; */
     }
 
     .devSkills {
-        grid-column: 1 / 3;
+        grid-area: devSkills;
+        /* grid-column: 2 / 5; */
     }
 
-    .technicalSkills {
-        grid-column: 3 / 5;
-
-    }
-
-    .portfolio {
-        grid-column: 1 / 5;
+    .portfolio,
+    .portfolio2 {
         align-items: center;
         justify-content: space-evenly;
     }
 
+    .portfolio {
+        grid-area: portfolio;
+        /* grid-column: 1 / 5; */
+
+    }
+
+    .portfolio2 {
+        grid-area: portfolio2;
+    }
+
     .education {
-        grid-column: 1 / 3;
+        grid-area: education;
+        /* grid-column: 1 / 3; */
         align-items: center;
         justify-content: space-evenly;
     }
 
     .certs {
-        grid-column: 3 / 5;
+        grid-area: certs;
+        /* grid-column: 3 / 5; */
         align-items: baseline;
         justify-content: space-evenly;
     }
