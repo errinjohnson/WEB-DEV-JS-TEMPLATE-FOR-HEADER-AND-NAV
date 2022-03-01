@@ -28,10 +28,6 @@ ul {
     list-style-type: circle;
 }
 
-.card {
-    margin-right: 5px;
-}
-
 .card-header,
 .card-title {
     margin: 0 auto;
@@ -119,7 +115,7 @@ h6.card-title {
         "aside"
         "main"
         "footer";
-    grid-template-columns: repeat(auto-fit, minmax(350px, 450px));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 550px));
 }
 
 header {
@@ -200,14 +196,14 @@ footer {
             "header aside"
             "main main"
             "footer footer";
-        max-width: 950px;
+        max-width: fit-content;
     }
 
     main {
         display: grid;
         grid-template-areas:
             "summary summary summary summary"
-            "softSkills devSkills devSkills devSkills"
+            "softSkills softSkills devSkills devSkills"
             "portfolio portfolio portfolio2 portfolio2"
             "education education certs certs"
             "workExp workExp workExp workExp"
@@ -225,7 +221,7 @@ footer {
     .softSkills,
     .education,
     .certs {
-        max-width: 450px;
+        max-width: 500px;
         display: flex;
     }
 
@@ -236,7 +232,6 @@ footer {
 
     .devSkills,
     .softSkills {
-        align-items: baseline;
         justify-content: space-evenly;
     }
 
