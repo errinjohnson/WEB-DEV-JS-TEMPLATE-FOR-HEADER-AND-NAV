@@ -108,6 +108,10 @@ h6.card-title {
     text-align: center;
 }
 
+p.card-text {
+    text-align: justify;
+}
+
 .education li {
     padding-bottom: 10px;
 }
