@@ -4,7 +4,6 @@ body {
     margin: auto;
     color: black;
     background-color: #F5F5F5;
-    /* box-shadow: 5px 5px 30px rgb(124, 90, 90); */
     font-family: 'Lora',
         serif;
     /* font-family: 'Indie Flower',
@@ -20,7 +19,6 @@ body {
     border: none;
     text-align: center;
 }
-
 
 header.card-header,
 aside.card-header {
@@ -137,7 +135,6 @@ h6.card-title {
 .haleh {
     font-size: .8em;
     text-decoration: wavy;
-
 }
 
 #footnote,
@@ -199,7 +196,6 @@ aside {
 
 .softSkills {
     grid-area: softSkills;
-
 }
 
 .softSkills2 {
@@ -287,23 +283,18 @@ footer {
 
     .summary {
         grid-area: summary;
-        /* grid-column: 1 / 5; */
     }
 
     .softSkills {
         grid-area: softSkills;
-        /* grid-column: 1 / 2; */
     }
 
     .devSkills {
         grid-area: devSkills;
-        /* grid-column: 2 / 5; */
     }
 
     .portfolio {
         grid-area: portfolio;
-        /* grid-column: 1 / 5; */
-
     }
 
     .portfolio2 {
@@ -312,14 +303,10 @@ footer {
 
     .education {
         grid-area: education;
-        /* grid-column: 1 / 3; */
-
     }
 
     .certs {
         grid-area: certs;
-        /* grid-column: 3 / 5; */
-
     }
 
     .workExp {
@@ -337,8 +324,6 @@ footer {
     .workExp4 {
         grid-area: workExp4;
     }
-
-
 
 }
 
