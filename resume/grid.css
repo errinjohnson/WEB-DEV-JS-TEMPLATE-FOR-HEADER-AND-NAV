@@ -1,5 +1,3 @@
-/* NOTE: ISSUE WITH RIGHT SIDE OF WEBPAGE, SPACE UNACCOUNTED FOR, NEEDS TO BE FIXED!! */
-
 /* * * * * **********  GLOBAL VARIABLES   ******* * * * * * * * * * * */
 body {
     max-width: 950px;
@@ -15,6 +13,12 @@ body {
 
 .grid-container {
     width: 100%;
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+    text-align: center;
 }
 
 header.card-header,
@@ -104,9 +108,12 @@ h6.card-title {
     text-align: center;
 }
 
+.education li {
+    padding-bottom: 10px;
+}
+
 h6.card-title {
     margin: 10px auto 20px auto;
-
     padding: .75rem 1.25rem;
     margin-bottom: 0;
     background-color: rgba(0, 0, 0, .03);
@@ -162,6 +169,29 @@ aside {
 
 
 
+.softSkills-grid {
+    display: grid;
+    grid-template-areas:
+        "card-softSkills1-2 card-softSkills1-2"
+        "softSkills softSkills2";
+    align-content: center;
+    justify-content: center;
+}
+
+.card-softSkills1-2 {
+    grid-area: card-softSkills1-2;
+    text-align: center;
+}
+
+.softSkills {
+    grid-area: softSkills;
+
+}
+
+.softSkills2 {
+    grid-area: softSkills2;
+}
+
 footer {
     display: grid;
     grid-template-areas:
@@ -202,7 +232,7 @@ footer {
 }
 
 /* * * * * ********** MEDIA QUERY  ******* * * * * * * * * * * */
-@media screen and (min-width:768px) {
+@media screen and (min-width:676px) {
     .grid-container {
         display: grid;
         grid-template-areas:
@@ -211,11 +241,28 @@ footer {
             "footer footer";
     }
 
+    .softSkills-grid {
+        display: grid;
+        grid-template-areas:
+            "card-softSkills1-2"
+            "card-softSkills1-2"
+            "softSkills"
+            "softSkills2";
+    }
+
+    .ulsoftSkills1 {
+        margin-bottom: 2px;
+    }
+
+    .card-softSkills1-2 {
+        margin: .8px;
+    }
+
     main {
         display: grid;
         grid-template-areas:
             "summary summary summary summary"
-            "softSkills softSkills devSkills devSkills"
+            "softSkills1 softSkills2 devSkills devSkills"
             "portfolio portfolio portfolio2 portfolio2"
             "education education certs certs"
             "workExp workExp workExp workExp"
