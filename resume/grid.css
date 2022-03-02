@@ -120,7 +120,8 @@ p.card-text,
 }
 
 ul.ulsoftSkills1,
-ul.ulsoftSkills2 {
+ul.ulsoftSkills2,
+.edu {
     padding-left: 0;
     text-align: justify;
 }
