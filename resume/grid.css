@@ -108,12 +108,19 @@ h6.card-title {
     text-align: center;
 }
 
-p.card-text {
+p.card-text,
+.card-text {
     text-align: justify;
 }
 
 .education li {
     padding-bottom: 10px;
+}
+
+ul.ulsoftSkills1,
+ul.ulsoftSkills2 {
+    padding-left: 0;
+    text-align: justify;
 }
 
 h6.card-title {
