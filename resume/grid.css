@@ -45,12 +45,6 @@ ul {
     margin-bottom: 10px;
 }
 
-.card-header,
-.card-title {
-    margin: 0 auto;
-}
-
-
 main {
     background-color: aliceblue;
 }
@@ -78,6 +72,7 @@ h5 {
 
 .summary,
 .softSkills,
+.softSkills2,
 .devSkills,
 .education,
 .certs,
@@ -191,6 +186,7 @@ aside {
 
 .card-softSkills1-2 {
     grid-area: card-softSkills1-2;
+    text-align: center;
 }
 
 .softSkills {
@@ -254,7 +250,6 @@ footer {
         display: grid;
         grid-template-areas:
             "card-softSkills1-2"
-            "card-softSkills1-2"
             "softSkills"
             "softSkills2";
     }
@@ -271,7 +266,7 @@ footer {
         display: grid;
         grid-template-areas:
             "summary summary summary summary"
-            "softSkills1 softSkills2 devSkills devSkills"
+            "softSkills softSkills2 devSkills devSkills"
             "portfolio portfolio portfolio2 portfolio2"
             "education education certs certs"
             "workExp workExp workExp workExp"
@@ -282,10 +277,6 @@ footer {
 
     .summary {
         grid-area: summary;
-    }
-
-    .softSkills {
-        grid-area: softSkills;
     }
 
     .devSkills {
