@@ -173,8 +173,6 @@ aside {
     flex-direction: column-reverse;
 }
 
-
-
 .softSkills-grid {
     display: grid;
     grid-template-areas:
