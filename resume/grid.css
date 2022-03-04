@@ -1,3 +1,10 @@
+/* * * * * **********  Animations   ******* * * * * * * * * * * */
+
+[data-text="database"]:hover {
+    background-color: aquamarine;
+}
+
+
 /* * * * * **********  GLOBAL VARIABLES   ******* * * * * * * * * * * */
 body {
     max-width: 950px;
