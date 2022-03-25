@@ -17,6 +17,11 @@ body {
         cursive; */
 }
 
+sup {
+    font-size: 65%;
+    line-height: 1;
+}
+
 .grid-container {
     width: 100%;
 }
@@ -85,7 +90,7 @@ h5 {
 .certs,
 .portfolio,
 .portfolio2 {
-    text-align: justify;
+    text-align: left;
 }
 
 .portfolio,
@@ -93,6 +98,11 @@ h5 {
 .education,
 .certs {
     align-items: center;
+}
+
+.card-header,
+.card-body {
+    padding: 0 1.25rem;
 }
 
 header,
@@ -123,7 +133,7 @@ ul.ulsoftSkills1,
 ul.ulsoftSkills2,
 .edu {
     padding-left: 0;
-    text-align: justify;
+    text-align: left;
 }
 
 h6.card-title {
@@ -136,8 +146,11 @@ h6.card-title {
 
 .haleh {
     font-size: .8em;
+    -webkit-text-decoration: wavy;
     text-decoration: wavy;
 }
+
+
 
 #footnote,
 #footnote2,
