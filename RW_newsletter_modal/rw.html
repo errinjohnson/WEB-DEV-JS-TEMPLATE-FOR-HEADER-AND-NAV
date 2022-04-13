@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,66 +8,97 @@
     <title>RockIT Women Newsletter Modal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="rw.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Button trigger modal -->
-    <button onload="myForm()" type="button" class="btn btn-primary" data-toggle="modal"
-        data-target="#exampleModal"></button>
+    <!-- <button type="button" style="width: 12.5rem;" class="mb-3 btn btn-primary active rounded text-dark"
+            data-bs-toggle="modal" data-bs-target="#newsLetter">
+            Subscribe
+        </button> -->
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content" style="background-color: #d4d4fc;">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> Subscribe to Our Email List</h5>
-
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <p class="px-3">Receive our monthly newsletter, notice of upcoming events, and deals found no
-                    where
-                    else!</p>
-                <div id="formNews" class="modal-body">
-                    <form
-                        action="https://womenintechlouisville.us17.list-manage.com/subscribe/post?u=4b22ce1d340b8c1f0902e5353&amp;id=7006333316"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                        target="_blank" novalidate="">
-                        <div id="mc_embed_signup_scroll">
-
-                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                            <div class="mc-field-group">
-                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
-                                </label>
-                                <input class="rounded" type="email" value="" name="EMAIL" class="required email"
-                                    id="mce-EMAIL">
-                            </div>
-                            <div id="mce-responses" class="clear">
-                                <div class="response" id="mce-error-response" style="display:none"></div>
-                                <div class="response" id="mce-success-response" style="display:none"></div>
-                            </div>
-                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                    name="b_4b22ce1d340b8c1f0902e5353_7006333316" tabindex="-1" value=""></div>
-                            <div class="clear"><input class="rounded" type="submit" value="Subscribe" name="subscribe"
-                                    id="mc-embedded-subscribe" class="button"></div>
+    <div class="container">
+        <div>
+            <h1>Container Area</h1>
+        </div>
+        <header>
+            <h1>Header Area</h1>
+            <p>website content before and after newsletter modal</p>
+        </header>
+        <main class="main">
+            <div>
+                <h1>Main Area</h1>
+            </div>
+            <div class="modal fade" id="newsLetter" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-md">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">RockIT Women Newsletter</h5>
+                            <p class="modal-title">Receive our monthly newsletter, notice of
+                                upcoming events, and deals
+                                found no where else!
+                            </p>
+                            <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
+                        <div class="modal-body">
+                            <form
+                                action="https://womenintechlouisville.us17.list-manage.com/subscribe/post?u=4b22ce1d340b8c1f0902e5353&amp;id=7006333316"
+                                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                class="validate" target="_blank" novalidate="">
+                                <div id="mc_embed_signup_scroll">
+
+                                    <div class="indicates-required"><span class="asterisk">*</span> indicates required
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                        </label>
+                                        <input class="rounded required email" type="email" value="" name="EMAIL"
+                                            id="mce-EMAIL">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk
+                                form bot signups -->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
+                                            type="text" name="b_4b22ce1d340b8c1f0902e5353_7006333316" tabindex="-1"
+                                            value=""></div>
+                                    <div class="clear"><input class="rounded btn" type="submit" value="Subscribe"
+                                            name="subscribe" id="mc-embedded-subscribe" class="button">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn" data-dismiss="modal">CLOSE</button>
+                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </main>
+        <footer>
+            <div>
+                <h1>Footer Area</h1>
+            </div>
+        </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
-    <script>
-        function myForm() {
-            show.modal;
-        }
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        $('#newsLetter').modal('show');
+    </script>
 </body>
 
 </html>

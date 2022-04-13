@@ -1,0 +1,81 @@
+.container {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+header,
+footer {
+    height: 150px;
+}
+
+main {
+    height: 400px;
+}
+
+header,
+footer,
+main {
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.modal {
+    position: relative;
+    height: 100%;
+    background-image: url("../img/sky-g77cee5533_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal-content {
+    margin: 0 auto;
+    font-family: "proxima-nova",
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+    opacity: .61;
+}
+
+.indicates-required {
+    text-align: right;
+}
+
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid purple;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+    flex-direction: column;
+}
+
+.modal-title {
+    border: none;
+}
+
+#mc-embedded-subscribe {
+    margin-top: 15px;
+    text-align: left;
+    padding: 5px;
+    border: 1px solid purple;
+    border-radius: 0.25rem;
+}
+
+.modal-footer {
+    border: none;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    color: #512c6d;
+    background-color: rgb(126, 126, 160);
+}
