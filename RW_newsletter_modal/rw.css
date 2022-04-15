@@ -1,4 +1,4 @@
-.container {
+/* .container {
     max-width: 1000px;
     height: 100%;
     margin: 0 auto;
@@ -19,7 +19,7 @@ footer,
 main {
     background-color: aliceblue;
     border: 1px solid black;
-}
+} */
 
 .modal {
     position: relative;
