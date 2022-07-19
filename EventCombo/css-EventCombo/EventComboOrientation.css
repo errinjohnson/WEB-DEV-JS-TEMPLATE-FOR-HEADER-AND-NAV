@@ -21,7 +21,7 @@
 button#btn {
     padding: 15px;
     color: black;
-    font-family: georgia;
+    font-family: "Baskerville Old Face", georgia;
     background: rgb(199, 0, 126);
     background: linear-gradient(90deg, rgba(199, 0, 126, 1) 28%, rgba(178, 40, 148, 0.5387198824842436) 45%);
     text-transform: uppercase;
@@ -71,7 +71,7 @@ body,
 .organiserBox span a,
 .text-links li a,
 .eventFlyerDes {
-    font-family: georgia, Times !important;
+    font-family: "Baskerville Old Face", georgia, Times !important;
 }
 
 .ticdes p,
@@ -138,25 +138,33 @@ section.eventBanner {
     margin: 0 auto;
 }
 
-.imgBg {
-    background-image: url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/Juneimage001.png");
+/* .section.eventBanner {
+    background-image: url("/img/RockITMembersMarvelousSix-blurBackgroundSmall.png");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .5;
-}
+} */
 
-main,
 aside {
     display: grid;
-    grid-template-columns: 300px 250px auto;
-    gap: 10px;
-    background-color: darkseagreen;
+    grid-template-columns: auto 50%;
 }
 
-/* @media screen and (max-device-width: 768px) {
-   section.eventBanner{
-    background-image:url("https://s3-us-west-2.amazonaws.com/alchemymomentum.com/img/clouds587x330.jpg");
-    max-width: 960px;
-    margin: 0 auto;
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+}
+
+@media screen and (min-device-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
     }
-  } */
+
+    .eventFlyerDes:hover {
+        transition: all .8s ease-in-out;
+        transform: scale(1.2);
+    }
+}

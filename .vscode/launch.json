@@ -1,10 +1,17 @@
 {
     "configurations": [
         {
-            "type": "pwa-chrome",
-            "name": "file:///D:/Portfolio/software-dev-portfolio/codeTestJS.html",
+            "name": "file:///D:/Portfolio/software-dev-portfolio/code-interview.html",
             "request": "launch",
-            "url": "file:///D:/Portfolio/software-dev-portfolio/codeTestJS.html"
+            "type": "firefox",
+            "url": "file:///D:/Portfolio/software-dev-portfolio/code-interview.html",
+            "file": "${workspaceFolder}/code-interview.html",
+            "pathMappings": [
+                {
+                    "url": "file:///D:",
+                    "path": "d:"
+                }
+            ]
         }
     ]
 }
