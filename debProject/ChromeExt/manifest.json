@@ -1,0 +1,18 @@
+{
+    "name": "Breaking US News",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "Populates a solitary HTML webpage , title and summary of article",
+    "icons": {
+        "128": "News128x128.png"
+    },
+    "permissions": [
+        "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+        "https://www.startribune.com/local/index.rss2",
+        "https://apnews.com/rss/feed",
+        "https://feeds.foxnews.com/foxnews/latest"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "software-dev-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "flipPage.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "http-proxy": "^1.18.1",
+    "http-proxy-middleware": "^2.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/errinjohnson/software-dev-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/errinjohnson/software-dev-portfolio/issues"
+  },
+  "homepage": "https://github.com/errinjohnson/software-dev-portfolio#readme"
+}

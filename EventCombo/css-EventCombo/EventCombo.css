@@ -1,5 +1,7 @@
-#readMore {
+#readMore,
+.zoomLink {
     display: none;
+    background-color: rgb(192, 193, 255);
 }
 
 /*//event flyer section*/
@@ -150,7 +152,6 @@ aside {
     display: grid;
     grid-template-columns: 300px 250px auto;
     gap: 10px;
-    background-color: darkseagreen;
 }
 
 /* @media screen and (max-device-width: 768px) {
